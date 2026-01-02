@@ -1891,13 +1891,11 @@ html.lenis body {
 
 /* --- ANIMATION STABILIZATION --- */
 .decipher-wrapper {
-  min-height: 40px;
-  /* Reserve space for h2 */
+  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* Prevent spillover */
   margin-bottom: 20px;
 }
 
@@ -1908,26 +1906,28 @@ html.lenis body {
   font-weight: 700;
   margin: 0;
   white-space: normal;
-  /* Allow wrapping but container holds height */
 }
 
 .typewriter-container {
-  min-height: 60px;
-  /* Reserve space for quote */
+  min-height: 100px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .appeal-intro {
   text-align: center;
-  margin: 0;
-  display: inline-block;
-  max-width: 90%;
-  /* Ensure it doesn't overflow screen */
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
   white-space: normal;
-  /* Force wrapping */
   word-wrap: break-word;
-  line-height: 1.4;
+  line-height: 1.5;
 }
