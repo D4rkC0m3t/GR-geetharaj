@@ -1924,5 +1924,10 @@ html.lenis body {
   text-align: center;
   margin: 0;
   display: inline-block;
-  min-width: 300px;
+  max-width: 90%;
+  /* Ensure it doesn't overflow screen */
+  white-space: normal;
+  /* Force wrapping */
+  word-wrap: break-word;
+  line-height: 1.4;
 }
