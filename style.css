@@ -325,28 +325,139 @@ nav a:hover::after {
   color: white;
 }
 
-/* ABOUT SPLIT */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 50px;
-  align-items: center;
+/* ABOUT SECTION REDESIGN */
+.section-title-centered {
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--bg-dark);
 }
 
-.about-image img {
+.section-title-centered::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+}
+
+.about-top-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.about-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  position: relative;
+  padding-top: 40px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Vertical Divider for Bottom Row */
+.about-bottom-row::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #e2e8f0;
+  transform: translateX(-50%);
+}
+
+.about-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.about-logo-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.about-column-logo {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  filter: grayscale(1) contrast(1.1);
+  transition: all 0.3s ease;
+}
+
+.about-column-logo:hover {
+  opacity: 1;
+  filter: grayscale(0) contrast(1);
+  transform: scale(1.05);
+}
+
+.about-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about-top-row .about-image {
+  position: sticky;
+  top: 120px;
+}
+
+.about-top-row .about-image img {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
 }
 
 .about-content p,
-.about-content li {
+.about-experience p,
+.about-column p,
+.about-column li {
   text-align: justify;
   margin-bottom: 1.2rem;
 }
 
-.about-content h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.about-experience h3,
+.about-column h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
   color: var(--bg-dark);
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+
+  .about-top-row,
+  .about-bottom-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-bottom-row::after {
+    display: none;
+  }
+
+  .about-bottom-row {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .about-column {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 40px;
+  }
 }
 
 
