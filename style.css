@@ -337,6 +337,19 @@ nav a:hover::after {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
+.about-content p,
+.about-content li {
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+
+.about-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--bg-dark);
+}
+
+
 /* CARDS (Practice Areas) */
 .cards-grid {
   display: grid;
