@@ -11,7 +11,12 @@
 
     <!-- Swiper & Fancybox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <style>
+        .fancybox__container {
+            z-index: 999999 !important;
+        }
+    </style>
 
     <!-- Playfair Display & Inter (for MuchStroke) -->
     <link
@@ -224,70 +229,7 @@
 <body>
 
 
-    <!-- DISCLAIMER BANNER (Bottom) -->
-    <div id="disclaimerModal" class="disclaimer-banner">
-        <div class="disclaimer-banner-content">
-            <div class="disclaimer-banner-text">
-                <h3>TERMS OF USAGE</h3>
-                <h2>Welcome</h2>
-                <div class="disclaimer-scroll-area">
-                    <p>This website and the contents herein are published solely for the purpose of informing members of
-                        the
-                        legal profession and the public about the candidature, vision, and proposed policy initiatives
-                        of
-                        Advocate Geetha Raj in connection with elections to the Bar Council.</p>
-
-                    <p>This website does not constitute and shall not be construed as an advertisement, solicitation,
-                        invitation, or inducement for professional engagement or legal work, in any manner whatsoever,
-                        within the meaning of the rules, regulations, standards of professional conduct, and etiquette
-                        prescribed by the Bar Council of India and the Karnataka State Bar Council.</p>
-
-                    <p>No material contained on this website is intended to provide legal advice, opinion, or assurance,
-                        nor
-                        does it create any Advocate–client relationship. Visitors are expressly advised that the
-                        information
-                        provided is general, illustrative, and campaign-oriented, and should not be relied upon for any
-                        legal purpose.</p>
-
-                    <p>All statements relating to proposed reforms, welfare measures, mentoring initiatives, mediation
-                        frameworks, pro bono activities, or administrative improvements represent aspirational goals and
-                        policy intentions only. Their implementation, if at all, shall be subject to:</p>
-                    <ul>
-                        <li>the Advocates Act, 1961,</li>
-                        <li>applicable rules and regulations of the Bar Council of India and the Karnataka State Bar
-                            Council,</li>
-                        <li>institutional processes, collective decision-making, and statutory limitations.</li>
-                    </ul>
-
-                    <p>References to professional experience, qualifications, practice areas, and institutional roles
-                        are
-                        factual statements of personal background, provided strictly for informational purposes in the
-                        context of candidature, and do not imply superiority, special status, guaranteed outcomes, or
-                        preferential treatment.</p>
-
-                    <p>Nothing contained on this website shall be construed as:</p>
-                    <ul>
-                        <li>a guarantee of results,</li>
-                        <li>a promise of benefits,</li>
-                        <li>an assurance of policy implementation, or</li>
-                        <li>an implication of endorsement or approval</li>
-                    </ul>
-                    <p>by the Bar Council of India, the Karnataka State Bar Council, any court, tribunal, governmental
-                        authority, or institution.</p>
-
-                    <p><strong>By accessing this website, the viewer acknowledges and agrees that the content is made
-                            available solely in furtherance of transparency, democratic participation, and informed
-                            choice
-                            within the legal profession, and in compliance with applicable Bar Council norms.</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="disclaimer-banner-buttons">
-                <button id="declineDisclaimer" class="disclaimer-btn-decline">I DECLINE</button>
-                <button id="acceptDisclaimer" class="disclaimer-btn-accept">I ACCEPT</button>
-            </div>
-        </div>
-    </div>
+    <!-- Disclaimer moved to bottom -->
 
     <!-- HEADER -->
     <header class="header">
@@ -358,11 +300,64 @@
         <div class="container about-grid">
             <div class="about-image">
                 <!-- Placeholder for about portrait - using simple div for grey box if no image -->
-                <img src="Gallery/HERO JPEG.jpg" alt="About Geetha Raj"
+                <img src="Gallery/geetha ji.jpeg" alt="About Geetha Raj"
                     style="height: 100%; object-fit: cover; border-radius: 8px;">
             </div>
             <div class="about-content">
                 <h2>About Me</h2>
+
+                <h3>Experience That Delivers</h3>
+                <p>Adv. Geetha Raj was enrolled as an Advocate in 1998 and began her professional journey under the
+                    mentorship of highly
+                    respected Senior Advocate Mr. G. Papi Reddy. She holds both a Law Degree and a Master of Laws
+                    (LL.M.) from
+                    University Law College, Bengaluru, and brings over two decades of active courtroom experience across
+                    multiple
+                    jurisdictions and practice areas.</p>
+                <p>Her practice spans Civil and Criminal Courts, the High Court of Karnataka, various Tribunals and
+                    Statutory
+                    Authorities, as well as appearances before the Supreme Court of India. This wide exposure has given
+                    her a deep,
+                    practical understanding of procedural complexities, institutional functioning, and the everyday
+                    challenges faced by
+                    Advocates across forums.</p>
+                <p>Adv. Geetha Raj serves as Standing Counsel for Public Sector Companies and regularly represents Life
+                    Insurance
+                    Companies, handling complex institutional, regulatory, and claim-related litigation. Alongside her
+                    institutional
+                    practice, she has consistently rendered pro bono legal services to the poor and underprivileged,
+                    reflecting a
+                    sustained commitment to access to justice and professional responsibility.</p>
+
+                <h3>Expertise and Credentials</h3>
+                <p>Adv. Geetha Raj brings a rare combination of long-standing courtroom practice, institutional
+                    representation,
+                    subject-matter depth, and practice leadership, equipping her for effective Bar Council governance.
+                </p>
+                <ul style="list-style-type: decimal; margin-left: 20px; margin-bottom: 15px;">
+                    <li><strong>Advocate with Extensive Courtroom Experience:</strong> Enrolled in 1998, she has over
+                        two decades of
+                        continuous practice before constitutional courts, civil and criminal courts, and statutory
+                        tribunals, including
+                        appearances before the High Court of Karnataka and the Supreme Court of India.</li>
+                    <li><strong>Advanced Legal Training & Subject-Matter Depth:</strong> She holds a Master Degree in
+                        Law (LL.M.) and
+                        has substantial professional engagement in insurance law, intellectual property, cyber law,
+                        medical negligence,
+                        consumer protection, and public law remedies.</li>
+                    <li><strong>Institutional & Public Sector Representation:</strong> As Standing Counsel for Public
+                        Sector
+                        Undertakings and Life Insurance Companies, she has extensive experience in government liaison,
+                        regulatory
+                        compliance, and high-stakes institutional litigation.</li>
+                    <li><strong>Certified Mediator:</strong> She is a trained and empanelled Mediator with the Karnataka
+                        Mediation
+                        Centre, bringing practical expertise in alternative dispute resolution.</li>
+                    <li><strong>Founder & Practice Leader:</strong> Since 2009, she has been the Founder and Principal
+                        of Geetha Raj &
+                        Associates, leading a structured, team-based legal practice.</li>
+                </ul>
+
                 <h3 id="aboutTypewriter">Institutional Leadership & Professional Recognition</h3>
                 <p>
                     Early in her professional career, Adv. Geetha Raj was elected as an Office Bearer of the Indian
@@ -415,6 +410,10 @@
                     number of votes and deeply touched by the love and trust bestowed upon by the members of the bar.
                     Though the post eluded me, the hearts I have won remain my greatest victory.
                 </p>
+
+                <div style="margin-top: 40px; text-align: left;">
+                    <a href="#" id="viewManifestoBtn" class="btn-manifesto-trigger">VIEW FULL MANIFESTO</a>
+                </div>
             </div>
         </div>
     </section>
@@ -510,7 +509,7 @@
                             <span class="option-num">02</span>
                         </div>
                         <div class="option-info">
-                            <div class="option-main">Comprehensive Medical Insurance</div>
+                            <div class="option-main">Comprehensive insurance schemes</div>
                             <div class="option-sub">Family Coverage • Lower Premiums • Tiered Options</div>
                             <div class="option-content">
 
@@ -942,121 +941,236 @@
                 <h1><span>Photo</span> Gallery</h1>
             </div>
 
-            <!-- Carousel Container -->
-            <div class="carousel-container">
-                <div class="carousel-wrapper">
-                    <div class="carousel-track">
-                        <div class="carousel-slide active">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.30 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.30 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (1).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (2).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (2).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (1).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (2).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (2).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (1).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (2).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (2).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (3).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (3).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (1).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (2).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (2).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (3).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (3).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (1).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (2).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (2).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (3).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (3).jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM.jpeg" alt="Gallery Image"
-                                data-fancybox="gallery" data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM.jpeg">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (1).jpeg" alt="Gallery Image"
-                                data-fancybox="gallery"
-                                data-src="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (1).jpeg">
-                        </div>
+            <!-- Swiper Gallery Container -->
+            <div class="gallery-swiper-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="Gallery/new1.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new1.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new2.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new2.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new3.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new3.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new4.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new4.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new5.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new5.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new6.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new6.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new7.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new7.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/new8.jpeg" data-fancybox="gallery" data-type="image"
+                            data-caption="Photo Gallery"><img src="Gallery/new8.jpeg" alt="Gallery Image"></a></div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.30 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.30 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.31 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.32 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.33 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.34 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.35 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.36 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.37 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.39 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.39 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.40 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.41 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.42 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.43 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.44 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (3).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM (3).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.45 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM (1).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM (1).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM (2).jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM (2).jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.46 PM.jpeg" alt="Gallery Image"></a>
+                    </div>
+                    <div class="swiper-slide"><a href="Gallery/WhatsApp Image 2025-12-30 at 6.16.47 PM.jpeg"
+                            data-fancybox="gallery" data-type="image" data-caption="Photo Gallery"><img
+                                src="Gallery/WhatsApp Image 2025-12-30 at 6.16.47 PM.jpeg" alt="Gallery Image"></a>
                     </div>
                 </div>
-
-                <!-- Navigation Arrows -->
-                <button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6" />
-                    </svg>
-                </button>
-                <button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6" />
-                    </svg>
-                </button>
-
-                <!-- Pagination Dots -->
-                <div class="carousel-dots" id="carouselDots"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
         </div>
@@ -1096,7 +1210,7 @@
                     </div>
                 </div>
 
-                <p class="vote-quote">"Your vote strengthens the voice of Advocates"</p>
+                <p class="vote-quote">"Your vote strengthens representation with responsibility."</p>
             </div>
         </div>
     </section>
@@ -1194,21 +1308,7 @@
             <p style="margin-top: 10px;">© Adv. Geetha Raj.</p>
         </div>
     </footer>
-
-    <!-- DISCLAIMER MODAL SCRIPT -->
     <script>
-        // Show disclaimer modal on page load
-        window.addEventListener('load', function () {
-            const modal = document.getElementById('disclaimerModal');
-            modal.classList.add('show');
-        });
-
-        // Close modal when user clicks "I Understand"
-        document.getElementById('acceptDisclaimer').addEventListener('click', function () {
-            const modal = document.getElementById('disclaimerModal');
-            modal.classList.remove('show');
-        });
-
         // Manifesto Flex Cards Interaction
         const manifestoOptions = document.querySelectorAll('.manifesto-option');
         manifestoOptions.forEach(option => {
@@ -1233,58 +1333,16 @@
         });
     </script>
 
-    <script>
-        // Show disclaimer modal on page load
-        window.addEventListener('load', function () {
-            const modal = document.getElementById('disclaimerModal');
-            if (modal) modal.classList.add('show');
-        });
 
-        // Close modal and Trigger Animation
-        document.getElementById('acceptDisclaimer').addEventListener('click', function () {
-            const modal = document.getElementById('disclaimerModal');
-            if (modal) modal.classList.remove('show');
-        });
-    </script>
 
-    <!-- JQuery, Swiper, Fancybox -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
-    <script>
-        /* SWIPER INIT */
-        $(function () {
-            var swiper = new Swiper('.carousel-gallery .swiper-container', {
-                effect: 'slide',
-                speed: 900,
-                slidesPerView: 5,
-                spaceBetween: 20,
-                simulateTouch: true,
-                autoplay: {
-                    delay: 5000,
-                    stopOnLastSlide: false,
-                    disableOnInteraction: false
-                },
-                pagination: {
-                    el: '.carousel-gallery .swiper-pagination',
-                    clickable: true
-                },
-                breakpoints: {
-                    320: { slidesPerView: 1, spaceBetween: 5 },
-                    425: { slidesPerView: 2, spaceBetween: 10 },
-                    768: { slidesPerView: 3, spaceBetween: 20 }
-                }
-            });
-        });
-    </script>
 
 
     <!-- FULL MANIFESTO MODAL -->
     <div id="manifestoModal" class="manifesto-modal">
         <div class="manifesto-modal-content">
             <span class="close-manifesto">&times;</span>
-            <div class="manifesto-text-container">
+            <div class="manifesto-text-container" data-lenis-prevent>
                 <h1 class='manifesto-title-main'>ADV. GEETHA RAJ</h1>
                 <h1 class='manifesto-title-main'>MANIFESTO FOR THE BAR</h1>
                 <h3 class='manifesto-subtitle'>“Welfare with Dignity • Justice with Speed • Practice with Protection”
@@ -1292,847 +1350,548 @@
 
                 <h2 class='manifesto-heading'>VISION STATEMENT</h2>
                 <h3 class='manifesto-subtitle'>Adv. Geetha Raj envisions a progressive, accountable, and future-ready
-                    Bar Council that
-                    genuinely protects its members while strengthening the delivery of justice. Under the guiding banner
-                    “Welfare with
-                    Dignity • Justice with Speed • Practice with Protection,” her vision is to build a Bar where every
-                    Advocate, and
-                    every Advocate’s family, is treated with respect, fairness, and urgency.</h3>
+                    Bar Council that genuinely protects its members while strengthening the delivery of justice. Under
+                    the guiding banner “Welfare with Dignity • Justice with Speed • Practice with Protection,” her
+                    vision is to build a Bar where every advocate, and every advocate’s family, is treated with respect,
+                    fairness, and urgency.</h3>
                 <p>This vision bridges modern advocacy with grassroots support, ensuring that even the most vulnerable
-                    lawyers have
-                    swift access to welfare benefits, comprehensive health security, and meaningful post-practice
-                    protection, while also
-                    safeguarding the integrity of the legal profession against misuse, impersonation, and unauthorised
-                    practice.</p>
+                    lawyers have swift access to welfare benefits, comprehensive health security, and meaningful
+                    post-practice protection, while also safeguarding the integrity of the legal profession against
+                    misuse, impersonation, and unauthorised practice.</p>
                 <p>It is a vision of Courts where women Advocates work in safe and inclusive environments, young lawyers
-                    are mentored
-                    rather than marginalised, professional dignity is upheld, and dispute resolution is efficient,
-                    ethical, and
-                    dignified, supported by a Bar Council that actively engages with institutions of the State to
-                    protect justice from
-                    within.</p>
+                    are mentored rather than marginalised, professional dignity is upheld, and dispute resolution is
+                    efficient, ethical, and dignified, supported by a Bar Council that actively engages with
+                    institutions of the State to protect justice from within.</p>
                 <p>A future-ready Bar must protect Advocates not only in court, but in health, hardship, and retirement.
-                    Welfare without
-                    security is incomplete.</p>
+                    Welfare without security is incomplete.</p>
 
                 <h2 class='manifesto-heading'>MISSION STATEMENT</h2>
                 <p>Adv. Geetha Raj’s mission is to translate vision into action by reforming Bar welfare systems,
-                    strengthening
-                    professional security, mentoring the next generation of Advocates, and streamlining the
-                    administration of justice.
-                    Drawing on her decades of courtroom experience, institutional representation, and insurance-law
-                    expertise, she is
-                    committed to delivering measurable outcomes rather than rhetoric.</p>
+                    strengthening professional security, mentoring the next generation of Advocates, and streamlining
+                    the administration of justice. Drawing on her decades of courtroom experience, institutional
+                    representation, and insurance-law expertise, she is committed to delivering measurable outcomes
+                    rather than rhetoric.</p>
                 <p>Her mission includes modernising Bar administration through transparency and technology, establishing
-                    robust support
-                    structures for young and women Advocates, institutionalising health insurance, pension security, and
-                    Advocate-protection frameworks, and strengthening mediation and pro bono services so that justice
-                    reaches every
-                    citizen.</p>
+                    robust support structures for young and women Advocates, institutionalising health insurance,
+                    pension security, and advocate-protection frameworks, and strengthening mediation and pro bono
+                    services so that justice reaches every citizen.</p>
                 <p>Equally, she is committed to active legislative and policy engagement, working with Bar Associations
-                    and State
-                    institutions to eliminate unauthorised practice of law, protect Advocates from violence and
-                    intimidation, and
-                    reinforce public trust in the legal profession. Through accountable governance and consistent
-                    institutional
-                    dialogue, she aims to restore confidence in the Bar Council as a body that truly serves, protects,
-                    and empowers its
-                    members.</p>
+                    and State institutions to eliminate unauthorised practice of law, protect Advocates from violence
+                    and intimidation, and reinforce public trust in the legal profession. Through accountable governance
+                    and consistent institutional dialogue, she aims to restore confidence in the Bar Council as a body
+                    that truly serves, protects, and empowers its members.</p>
 
                 <h2 class='manifesto-heading'>ABOUT ADV. GEETHA RAJ : EXPERIENCE THAT DELIVERS</h2>
                 <p>Adv. Geetha Raj was enrolled as an Advocate in 1998 and began her professional journey under the
-                    mentorship of highly
-                    respected Senior Advocate Mr. G. Papi Reddy. She holds both a Law Degree and a Master of Laws
-                    (LL.M.) from
-                    University Law College, Bengaluru, and brings over two decades of active courtroom experience across
-                    multiple
-                    jurisdictions and practice areas.</p>
+                    mentorship of the highly respected Senior Advocate Mr. G. Papi Reddy. She holds both a Law Degree
+                    and a Master of Laws (LL.M.) from University Law College, Bengaluru, and brings over two decades of
+                    active courtroom experience across multiple jurisdictions and diverse practice areas.</p>
                 <p>Her practice spans Civil and Criminal Courts, the High Court of Karnataka, various Tribunals and
-                    Statutory
-                    Authorities, as well as appearances before the Supreme Court of India. This wide exposure has given
-                    her a deep,
-                    practical understanding of procedural complexities, institutional functioning, and the everyday
-                    challenges faced by
-                    Advocates across forums.</p>
+                    Statutory Authorities, as well as appearances before the Supreme Court of India. This wide exposure
+                    has equipped her with a deep, practical understanding of procedural complexities, institutional
+                    functioning, and the everyday challenges faced by advocates across forums.</p>
                 <p>Adv. Geetha Raj serves as Standing Counsel for Public Sector Companies and regularly represents Life
-                    Insurance
-                    Companies, handling complex institutional, regulatory, and claim-related litigation. Alongside her
-                    institutional
-                    practice, she has consistently rendered pro bono legal services to the poor and underprivileged,
-                    reflecting a
-                    sustained commitment to access to justice and professional responsibility.</p>
+                    Insurance Companies, handling complex institutional, regulatory, and claim-related litigation.
+                    Alongside her institutional practice, she has consistently rendered pro bono legal services to the
+                    poor and underprivileged, reflecting a sustained commitment to access to justice and professional
+                    responsibility.</p>
                 <p>Over the years, Adv. Geetha Raj has handled a diverse and evolving spectrum of legal work, including:
                 </p>
                 <ol class='list-level-1'>
-                    <li>Adv. Geetha Raj has extensive experience in health, life and GeneralInsurance disputes,
-                        including claim
-                        repudiation challenges, interpretation of policy terms, deficiency of service claims, regulatory
-                        compliance
+                    <li><strong>Insurance Law (Health, Life & General Insurance):</strong> Adv. Geetha Raj has extensive
+                        experience in health, life, and general insurance disputes, including challenges to claim
+                        repudiation, interpretation of policy terms, deficiency of service claims, regulatory compliance
                         issues, and litigation before consumer fora, civil courts, and writ courts. Her work in this
-                        area involves close
-                        engagement with insurance companies, public sector undertakings, and regulatory frameworks,
-                        combining technical
-                        policy analysis with effective litigation strategy. She has been involved in several significant
-                        and
-                        precedent-setting matters, where important legal principles governing insurance liability, and
-                        claim
-                        adjudication were examined and laid down by constitutional and apex courts, contributing
-                        meaningfully to the
+                        area involves close engagement with insurance companies, public sector undertakings, and
+                        regulatory frameworks, combining technical policy analysis with effective litigation
+                        strategy.<br><br>She has been involved in several significant and precedent-setting matters
+                        where important legal principles governing insurance liability and claim adjudication were
+                        examined and laid down by constitutional and apex courts, contributing meaningfully to the
                         development of insurance jurisprudence.</li>
                     <li><strong>Writ Jurisdiction and Public Law Remedies:</strong> Regular handling of matters under
-                        Articles 226 and
-                        227 of the Constitution of India, involving constitutional, administrative, and regulatory
-                        challenges before the
-                        High Court of Karnataka. This includes challenges to arbitrary state action, violation of
-                        statutory duties,
-                        jurisdictional errors by authorities and tribunals, and enforcement of fundamental and legal
-                        rights.</li>
-                    <li><strong>Medical Negligence and Healthcare Litigation:</strong> Representation in medical
-                        negligence claims,
-                        including disputes involving hospitals, doctors, and healthcare institutions. Her practice
-                        covers issues of
-                        professional liability, standards of care, informed consent, and compensation, before consumer
-                        fora, civil
-                        courts, and appropriate writ jurisdictions.</li>
+                        Articles 226 and 227 of the Constitution of India, involving constitutional, administrative, and
+                        regulatory challenges before the High Court of Karnataka. This includes challenges to arbitrary
+                        State action, violation of statutory duties, jurisdictional errors by authorities and tribunals,
+                        and enforcement of fundamental and legal rights.</li>
+                    <li><strong>Medical Negligence and Healthcare Litigation :</strong> Representation in medical
+                        negligence claims involving hospitals, doctors, and healthcare institutions. Her practice covers
+                        issues of professional liability, standards of care, informed consent, and compensation, before
+                        consumer fora, civil courts, and appropriate writ jurisdictions.</li>
                     <li><strong>Product Liability and Consumer Protection:</strong> Handling of product liability
-                        disputes and consumer
-                        protection matters, including defective goods, unfair trade practices, service deficiencies, and
-                        compensation
-                        claims. This work reflects a strong understanding of consumer jurisprudence and evolving
-                        liability standards.
-                    </li>
+                        disputes and consumer protection matters, including defective goods, unfair trade practices,
+                        service deficiencies, and compensation claims, reflecting a strong grasp of consumer
+                        jurisprudence and evolving liability standards.</li>
                     <li><strong>Intellectual Property Rights (IPR):</strong> Advisory and dispute-resolution work
-                        relating to
-                        intellectual property rights, including enforcement, infringement-related issues, and strategic
-                        advisory
-                        support, particularly in the context of commercial and professional practices.</li>
+                        relating to intellectual property rights, including enforcement, infringement-related issues,
+                        and strategic advisory support, particularly in the context of commercial and professional
+                        practices.</li>
                     <li><strong>Cyber Law, Digital Compliance & Economic Offences:</strong> Advisory and litigation
-                        support in matters
-                        concerning cyber fraud, data misuse, online impersonation, and technology-enabled offences. This
-                        includes
-                        compliance guidance, dispute resolution, and court proceedings involving electronic records,
-                        digital
-                        transactions, and emerging technology-related legal issues.</li>
+                        support in matters concerning cyber fraud, data misuse, online impersonation, and
+                        technology-enabled offences. This includes compliance guidance, dispute resolution, and court
+                        proceedings involving electronic records, digital transactions, and emerging technology-related
+                        legal issues.</li>
                     <li><strong>Matrimonial and Family Law Matters:</strong> Sensitive handling of matrimonial and
-                        family disputes,
-                        including divorce, maintenance, custody, guardianship, and child-welfare proceedings. Her
-                        approach in this area
-                        emphasises child-centric outcomes, dignity of parties, and, wherever possible, mediation and
-                        amicable
-                        resolution, balancing legal rigour with human sensitivity.</li>
+                        family disputes, including divorce, maintenance, custody, guardianship, and child welfare
+                        proceedings. Her approach emphasises child-centric outcomes, dignity of parties, and, wherever
+                        possible, mediation and amicable resolution, balancing legal rigour with human sensitivity.</li>
                 </ol>
-                <p>She is also a trained Mediator empanelled with the Karnataka Mediation Centre, with a strong focus on
-                    dignified
-                    dispute resolution and effective settlement practices. In parallel, she actively contributes to
-                    training and
-                    mentoring law students, interns, and young Advocates, bridging academic learning with courtroom
-                    realities.</p>
+                <p>Adv. Geetha Raj is also a trained Mediator empanelled with the Karnataka Mediation Centre, with a
+                    strong focus on dignified dispute resolution and effective settlement practices. In parallel, she
+                    actively contributes to the training and mentoring of law students, interns, and young advocates,
+                    bridging academic learning with courtroom realities.</p>
                 <p>Since 2009, Adv. Geetha Raj has been the Founder and Principal of Geetha Raj & Associates, a
-                    Bengaluru-based law firm
-                    operating from 5th Cross, Magadi Road. Under her leadership, the firm has developed into a
-                    structured professional
-                    practice comprising associates, interns, and collaborating counsel across India. Her role
-                    encompasses not only
-                    active litigation, but also practice development, supervision of complex matters, and mentorship,
-                    reflecting
-                    institutional maturity and professional standing.</p>
+                    Bengaluru-based law firm operating from 5th Cross, Magadi Road. Under her leadership, the firm has
+                    evolved into a structured professional practice comprising associates, interns, and collaborating
+                    counsel across India. Her role encompasses not only active litigation but also practice development,
+                    supervision of complex matters, and mentorship, reflecting institutional maturity and professional
+                    standing.</p>
                 <p>Her long-standing experience in leading a team-based legal practice keeps her closely connected to
-                    the real-world
-                    functioning of courts, Advocate welfare concerns, and systemic inefficiencies within Bar
-                    administration.</p>
+                    the real-world functioning of courts, advocate welfare concerns, and systemic inefficiencies within
+                    Bar administration.</p>
                 <p>This combination of courtroom depth, institutional representation, subject-matter diversity,
-                    mediation expertise, and
-                    sustained professional leadership equips Adv. Geetha Raj to deliver a Bar Council that is
-                    responsive, transparent,
-                    and genuinely protective of its members.</p>
+                    mediation expertise, and sustained professional leadership equips Adv. Geetha Raj to contribute to a
+                    Bar Council that is responsive, transparent, and genuinely protective of its members.</p>
 
-                <h3 class='manifesto-heading'>LAW CHAMBERS :</h3>
+                <h2 class='manifesto-heading'>INSTITUTIONAL LEADERSHIP & PROFESSIONAL RECOGNITION</h2>
+                <p>Early in her professional career, Adv. Geetha Raj was elected as an Office Bearer of the Indian
+                    Federation of Women Lawyers (IFWL) through a democratic process. During her tenure, she actively
+                    contributed to strengthening professional capacity within the Bar by organising multiple workshops
+                    and training programmes for advocates across Karnataka, in collaboration with the Karnataka Judicial
+                    Academy. These initiatives focused on practical courtroom skills, legal updates, and professional
+                    development, reflecting her early and sustained commitment to collective institutional growth and
+                    peer-driven leadership.</p>
+                <p>Adv. Geetha Raj currently serves her second consecutive term as an elected Director on the Board of
+                    NyayamitraSahakari Bank, a cooperative bank established and run by the advocate fraternity. Her
+                    election through member voting reflects the trust and confidence reposed in her by the advocate
+                    community. During her tenure, she has been actively involved in streamlining banking operations,
+                    strengthening internal governance, and improving service delivery to advocate-members.</p>
+                <p>Under the collective stewardship of the Board, the Bank has:</p>
+                <ol class='list-level-1'>
+                    <li>expanded financial support to members through housing, mortgage, and auto loans;</li>
+                    <li>enhanced individual and group loan limits to better meet members’ professional and personal
+                        needs;</li>
+                    <li>improved operational efficiency and financial discipline; and</li>
+                    <li>achieved sustained profitability, enabling the declaration of 16% dividends to its members.</li>
+                </ol>
+                <p>Her role on the Board reflects not only financial prudence but also her demonstrated ability to
+                    manage member-driven financial institutions with accountability, transparency, and long-term vision.
+                </p>
+                <p>In recognition of her subject-matter expertise, Adv. Geetha Raj has been invited by Public Sector
+                    Insurance Companies to deliver training presentations to officers across Karnataka on identifying,
+                    handling, and preventing fraudulent insurance claims. This reflects the confidence reposed in her by
+                    institutional stakeholders beyond the courtroom and highlights her contribution to strengthening
+                    ethical and effective claims management.</p>
+                <p>She has also been awarded “Best Panel Advocate” by The New India Assurance Company Ltd., in
+                    recognition of her exemplary conduct of cases, professional integrity, and consistent performance.
+                </p>
+                <p>Adv. Geetha Raj has twice contested for the post of Director, NyayamitraSahakari Bank Niyamitha, and
+                    was elected on both occasions. In February 2025, she contested for the post of Treasurer of the
+                    Advocates Association, Bengaluru. Though she narrowly missed the position, she was humbled and
+                    deeply touched by the overwhelming support, votes, and trust bestowed upon her by members of the
+                    Bar. While the post eluded her, the goodwill and confidence earned remain her greatest victory.</p>
+
+                <h3 class='manifesto-heading'>LAW CHAMBERS</h3>
                 <p>Geetha Raj & Associates<br>
-                    5th Cross, Magadi Road, Bengaluru – 560 023</p>
+                    5th Cross, Magadi Road,<br>
+                    Bengaluru – 560 023</p>
                 <p><strong>Contact:</strong><br>
                     📞 +91 96633 81828<br>
                     ✉️ advgeetharaj@gmail.com</p>
 
                 <h2 class='manifesto-heading'>EXPERTISE AND CREDENTIALS</h2>
                 <p>Adv. Geetha Raj brings a rare combination of long-standing courtroom practice, institutional
-                    representation,
-                    subject-matter depth, and practice leadership, equipping her for effective Bar Council governance.
-                </p>
+                    representation, subject-matter depth, and practice leadership, equipping her for effective Bar
+                    Council governance.</p>
                 <ol class='list-level-1'>
                     <li><strong>Advocate with Extensive Courtroom Experience:</strong> Enrolled in 1998, she has over
-                        two decades of
-                        continuous practice before constitutional courts, civil and criminal courts, and statutory
-                        tribunals, including
-                        appearances before the High Court of Karnataka and the Supreme Court of India, giving her
-                        first-hand insight
-                        into procedural bottlenecks and systemic inefficiencies affecting Advocates.</li>
+                        two decades of continuous practice before constitutional courts, civil and criminal courts, and
+                        statutory tribunals, including appearances before the High Court of Karnataka and the Supreme
+                        Court of India, giving her first-hand insight into procedural bottlenecks and systemic
+                        inefficiencies affecting Advocates.</li>
                     <li><strong>Advanced Legal Training & Subject-Matter Depth:</strong> She holds a Master Degree in
-                        Law (LL.M.) and
-                        has substantial professional engagement in insurance law, intellectual property, cyber law,
-                        medical negligence,
-                        consumer protection, and public law remedies, areas that increasingly define modern litigation
-                        and regulatory
-                        practice.</li>
+                        Law (LL.M.) and has substantial professional engagement in insurance law, intellectual property,
+                        cyber law, medical negligence, consumer protection, and public law remedies, areas that
+                        increasingly define modern litigation and regulatory practice.</li>
                     <li><strong>Institutional & Public Sector Representation:</strong> As Standing Counsel for Public
-                        Sector
-                        Undertakings and Life Insurance Companies, she has extensive experience in government liaison,
-                        regulatory
-                        compliance, and high-stakes institutional litigation, strengthening her capacity to engage
-                        effectively with
-                        State authorities and policymakers.</li>
+                        Sector Undertakings and Life Insurance Companies, she has extensive experience in government
+                        liaison, regulatory compliance, and high-stakes institutional litigation, strengthening her
+                        capacity to engage effectively with State authorities and policymakers.</li>
                     <li><strong>Certified Mediator:</strong> She is a trained and empanelled Mediator with the Karnataka
-                        Mediation
-                        Centre, bringing practical expertise in alternative dispute resolution, settlement structuring,
-                        and
-                        court-annexed mediation, an essential component of justice reform and pendency reduction.</li>
+                        Mediation Centre, bringing practical expertise in alternative dispute resolution, settlement
+                        structuring, and court-annexed mediation, an essential component of justice reform and pendency
+                        reduction.</li>
                     <li><strong>Founder & Practice Leader:</strong> Since 2009, she has been the Founder and Principal
-                        of Geetha Raj &
-                        Associates, leading a structured, team-based legal practice with associates, interns, and
-                        collaborating counsel
-                        across India. Her experience in mentoring young lawyers, supervising complex matters, and
-                        maintaining
-                        professional standards reflects proven leadership and administrative capability directly
-                        relevant to Bar Council
-                        responsibilities.</li>
+                        of Geetha Raj & Associates, leading a structured, team-based legal practice with associates,
+                        interns, and collaborating counsel across India. Her experience in mentoring young lawyers,
+                        supervising complex matters, and maintaining professional standards reflects proven leadership
+                        and administrative capability directly relevant to Bar Council responsibilities.</li>
                 </ol>
 
                 <h2 class='manifesto-heading'>CORE COMMITMENTS</h2>
                 <ol class='list-level-1'>
-                    <li><strong>Welfare That Works.</strong>
+                    <li><strong>WELFARE THAT WORKS</strong>
+                        <p>The Karnataka Advocates' Welfare Fund has great potential but needs overhaul. Geetha will
+                            ensure:</p>
                         <ul class='list-level-2'>
-                            <li>The Karnataka Advocates’ Welfare Fund rests on strong statutory foundations, but its
-                                effectiveness
-                                depends on timely delivery, procedural clarity, and last-mile access. Adv. Geetha Raj is
-                                committed to
-                                reforming the welfare system so that welfare benefits reach Advocates and their families
-                                with certainty,
-                                dignity, and urgency.</li>
-                            <li>She will work to institutionalise time-bound processing of welfare claims, with clearly
-                                defined stages,
-                                submission, scrutiny, approval, and disbursal, supported by transparent timelines and
-                                accountability
-                                mechanisms. This will replace uncertainty and delay with predictability and trust.</li>
-                            <li>To ensure accessible support, Welfare Helpdesks will be established at Bar Associations
-                                across the
-                                State, enabling Advocates and their families to receive local guidance on welfare
-                                entitlements,
-                                documentation, and record updates without unnecessary travel or intermediaries.</li>
-                            <li>A dedicated Family-First Protocol will prioritise and fast-track welfare benefits to the
-                                families of
-                                deceased Advocates, providing hand-holding assistance and sensitive processing during
-                                periods of
-                                vulnerability. In parallel, “Know Your Welfare Rights” awareness initiatives will be
-                                undertaken so that
-                                no Advocate or dependent is deprived of statutory benefits due to procedural or
-                                informational gaps.</li>
-                            <li>Through these measures, welfare will function not as a formality, but as a reliable
-                                system of support
-                                for Advocates and their families across all stages of professional life.</li>
+                            <li><strong>Time-bound claim processing:</strong> Defining each step (submission, scrutiny,
+                                approval, disbursal) with strict timelines and an escalation channel</li>
+                            <li><strong>Welfare Helpdesks at Bar Associations:</strong> On-site assistance for nominee
+                                updates, ID corrections, and guidance (following the successful doorstep-service model
+                                in Mysuru)</li>
+                            <li><strong>Family-First Protocol:</strong> Assisting dependents of deceased advocates with
+                                paperwork and fast access to benefits</li>
+                            <li><strong>"Know Your Welfare Rights" literacy drives:</strong> Ensuring no lawyer loses
+                                entitlements to simple procedural errors</li>
                         </ul>
                     </li>
-                    <li><strong>Comprehensive Medical Insurance for Advocates and Their Families.</strong>
-                        <ul class='list-level-2'>
-                            <li>Access to affordable and reliable healthcare is no longer optional, it is essential
-                                professional
-                                security. Adv. Geetha Raj will work toward the introduction of Bar-wide group medical
-                                insurance schemes
-                                covering Advocates, their spouses, children, and dependent parents, ensuring that health
-                                crises do not
-                                become financial catastrophes for Advocates’ families.</li>
-                            <li>Her focus will be on negotiating group Mediclaim arrangements with both public and
-                                private insurers,
-                                leveraging pooled risk to secure lower premiums, broader coverage, and access to
-                                cashless treatment
-                                across major hospital networks. Coverage will include hospitalisation, critical illness,
-                                maternity
-                                benefits, and essential post-hospitalisation care.</li>
-                            <li>Recognising the diversity within the Bar, the insurance framework will be designed with
-                                tiered and
-                                optional plans, enabling young Advocates, women Advocates, and senior practitioners to
-                                choose coverage
-                                aligned with their stage of life and professional capacity. Continuity of coverage will
-                                be a guiding
-                                principle, ensuring that Advocates are not excluded due to illness, maternity, or
-                                temporary
-                                interruptions in practice.</li>
-                            <li>Drawing on her professional experience in insurance litigation and advisory work, Adv.
-                                Geetha Raj is
-                                committed to ensuring that this initiative is practical, transparent, and enforceable in
-                                real life, with
-                                an emphasis on claims honouring and grievance redressal, not merely policy promises.
-                            </li>
-                        </ul>
-                    </li>
-                    <li><strong>Pension and Post-Practice Security for Advocates (Including Women Advocates)</strong>
-                        <ul class='list-level-2'>
-                            <li>The assumption that an Advocate can or should practise until death is neither humane nor
-                                reflective of
-                                present realities. Ill-health, age, caregiving responsibilities, and changing
-                                professional capacities
-                                affect Advocates as they do any other profession. A Bar that speaks for justice must
-                                therefore also
-                                ensure dignity, continuity, and security for its own members beyond active practice.
-                            </li>
-                            <li>Adv. Geetha Raj will initiate a structured, transparent, and consultative process to
-                                evolve a Pension
-                                and Post-Practice Security Framework for Advocates, rooted in voluntariness, fairness,
-                                and long-term
-                                sustainability. This framework will be developed in consultation with senior Advocates,
-                                Bar
-                                Associations, actuarial and financial experts, and relevant government stakeholders,
-                                ensuring both
-                                professional acceptance and financial prudence.</li>
-                            <li>The proposed approach will explore voluntary and choice-based pension contributions
-                                during active years
-                                of practice, with flexible contribution tiers aligned to years of practice and earning
-                                capacity. Special
-                                safeguards will be incorporated for women Advocates, particularly those who experience
-                                career
-                                interruptions due to marriage, maternity, or caregiving responsibilities, so that such
-                                life events do
-                                not result in lifelong insecurity.</li>
-                            <li>Clear and dignified exit and transition mechanisms will also be examined, including
-                                options such as
-                                voluntary dormancy or surrender of Sanad upon retirement and eligibility-based
-                                activation of pension
-                                benefits thereafter. The guiding principle of this initiative is security with dignity,
-                                not coercion,
-                                ensuring that retirement from practice does not mean abandonment by the profession.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Pressuring the State for Statutory Protection :</strong>
-                        <p>Medical insurance and pension security for Advocates cannot depend on goodwill, fragmented
-                            schemes, or ad-hoc
-                            announcements. They require statutory recognition, sustained policy backing, and
-                            institutional
-                            accountability. A profession entrusted with protecting constitutional rights must itself be
-                            protected
-                            through law.</p>
-                        <p>Adv. Geetha Raj commits to using the institutional authority and collective voice of the Bar
-                            Council to
-                            engage decisively with the State Government for:</p>
-                        <ul class='list-level-2'>
-                            <li>statutory medical insurance support for Advocates and their families,</li>
-                            <li>structured government participation or subsidies in Advocate pension frameworks, and
-                            </li>
-                            <li>formal recognition of Advocates as a professional class entitled to social security
-                                protection.</li>
-                        </ul>
-                        <p>She will also work in coordination with other State Bar Councils and the Bar Council of India
-                            to build a
-                            national advocacy framework for long-term legislative protection of Advocates. Advocates
-                            protect the justice
-                            system; the justice system, in turn, must protect Advocates.</p>
-                    </li>
-                    <li><strong>Advocate Protection and Security Framework</strong>
-                        <p>Financial security alone is insufficient if Advocates remain vulnerable to physical threats,
-                            professional
-                            intimidation, and retaliation for discharging their duties. The independence of the Bar, and
-                            by extension,
-                            the administration of justice, depends on the ability of Advocates to practise without fear.
-                        </p>
-                        <p>Adv. Geetha Raj will work toward the establishment of a formal Advocate Protection and
-                            Security Framework,
-                            recognising that attacks on Advocates are not private disputes but assaults on the justice
-                            delivery system
-                            itself. This framework will institutionalise coordinated responses to threats, harassment,
-                            and violence
-                            against Advocates, ensuring that such incidents are addressed swiftly, seriously, and
-                            transparently.</p>
-                        <p>The framework will provide for structured coordination with police and district
-                            administrations, clear
-                            response protocols when Advocates are targeted for professional work, and consistent
-                            institutional
-                            representation before the government and judiciary. Through sustained engagement and policy
-                            advocacy, Adv.
-                            Geetha Raj will reinforce a zero-tolerance approach to intimidation or violence against
-                            Advocates,
-                            safeguarding professional dignity and fearless advocacy.</p>
-                    </li>
-                    <li><strong>Young Advocates First</strong>
-                        <p>The strength and future of the legal profession depend on how its youngest members are
-                            trained, supported,
-                            and retained. Early-career Advocates require practical skills, ethical grounding, and
-                            economic stability,
-                            not symbolic assurances.</p>
-                        <p>Adv. Geetha Raj will prioritise young Advocates by establishing a structured mentorship and
-                            practice-support
-                            ecosystem that bridges the gap between legal education and courtroom realities. A formal
-                            Mentorship Network
-                            will pair experienced Advocates with juniors to impart practical knowledge in drafting,
-                            procedure, courtroom
-                            conduct, and professional ethics.</p>
-                        <p>Regular Practice-Support Clinics will focus on core areas of daily practice, including family
-                            court strategy,
-                            civil trial techniques, tribunal advocacy, and insurance and consumer litigation. To address
-                            long-term
-                            sustainability, young Advocates will also be supported through a Career Stability Toolkit,
-                            covering chamber
-                            management, ethical client intake, fee structuring, and reputation building.</p>
-                        <p>By investing deliberately in the first five years of practice, this initiative aims to build
-                            a confident,
-                            competent, and ethically grounded generation of Advocates—strengthening the Bar as a whole.
-                        </p>
-                    </li>
-                    <li><strong>Women’s Safety, Respect & Leadership</strong>
-                        <p>A Bar that does not protect and empower its women Advocates cannot claim to be just or
-                            progressive. Women
-                            lawyers continue to face harassment, intimidation, exclusion from leadership, and informal
-                            segregation into
-                            limited practice areas, realities that undermine professional dignity and equal opportunity.
-                        </p>
-                        <p>Adv. Geetha Raj is committed to fostering a court and Bar environment where women Advocates
-                            practise with
-                            safety, respect, and confidence. She supports zero tolerance for harassment or intimidation
-                            within court
-                            premises or Bar institutions, and will work toward the establishment of structured support
-                            mechanisms for
-                            women Advocates facing professional crises.</p>
-                        <p>An internal rapid-response support system, complemented by peer-support and mentorship
-                            networks, will ensure
-                            that women Advocates are not isolated when confronting harassment, bias, or professional
-                            obstruction. To
-                            address long-standing under-representation, she will Advocate for meaningful participation
-                            of women
-                            Advocates in committees and ADR panels, creating a sustainable leadership pipeline rather
-                            than symbolic
-                            inclusion.</p>
-                        <p>Through targeted training, mentorship, and institutional support, women Advocates will be
-                            encouraged and
-                            enabled to compete across all areas of practice, including criminal, constitutional, and
-                            commercial
-                            litigation, based on merit, not stereotypes. This commitment is aimed at building safer
-                            courts, equal
-                            opportunity, and a Bar where women’s voices shape the profession’s future.</p>
-                    </li>
-                    <li><strong>Mediation & ADR For Faster Justice</strong>
-                        <p>Justice delayed erodes both dignity and faith in the legal system. As a trained mediator,
-                            Adv. Geetha Raj
-                            recognises that effective mediation and alternative dispute resolution (ADR) can
-                            significantly reduce case
-                            backlogs while preserving relationships and professional dignity.</p>
-                        <p>She will promote mediation-readiness among Advocates, focusing on negotiation skills,
-                            settlement drafting,
-                            and early identification of cases suitable for consensual resolution. Special emphasis will
-                            be placed on
-                            family disputes, such as custody, maintenance, and property matters, where timely and
-                            enforceable
-                            settlements prevent prolonged emotional and financial strain.</p>
-                        <p>Adv. Geetha Raj will work to strengthen court-annexed mediation systems by improving
-                            coordination, scheduling
-                            discipline, and litigant awareness, ensuring that mediation referrals are meaningful and
-                            effective. These
-                            efforts align with the Mediation Act, 2023, which emphasises pre-litigation mediation and
-                            expeditious
-                            settlement.</p>
-                        <p>By institutionalising ADR capacity within the Bar, her vision is to achieve speedy justice
-                            without
-                            compromising advocacy, reduce avoidable litigation, and contribute to easing the national
-                            case backlog.</p>
-                    </li>
-                    <li><strong>Pro Bono With Purpose</strong>
-                        <p>Access to justice must extend beyond ability to pay. Building on her long-standing commitment
-                            to pro bono
-                            service, Adv. Geetha Raj will work to institutionalise structured, accountable, and
-                            dignified legal aid
-                            within the Bar.</p>
-                        <p>A coordinated pro bono engagement framework will match deserving litigants with willing
-                            Advocates through Bar
-                            Associations and civil-society partners, ensuring that assistance is meaningful and
-                            outcomes-oriented rather
-                            than symbolic. Legal-literacy initiatives will empower citizens on issues such as domestic
-                            violence,
-                            senior-citizen rights, insurance claims, and maintenance.</p>
-                        <p>Periodic One-Day Justice Camps, conducted in collaboration with local Bar Associations, will
-                            provide
-                            screening, guidance, and documentation support. Through these measures, pro bono work will
-                            function as a
-                            system of justice delivery, ensuring that legal aid reaches the last person with
-                            accountability and dignity.
-                        </p>
-                    </li>
-                    <li><strong>Professional Dignity</strong>
-                        <p>The dignity of Advocates is inseparable from the dignity of the justice system. Every
-                            Advocate is entitled to
-                            respect, within courts, before authorities, and within professional institutions.</p>
-                        <p>Adv. Geetha Raj will work toward the adoption of an Advocates’ Dignity Charter, setting out
-                            clear standards
-                            of respectful conduct and institutional remedies for humiliation, unfair treatment, or
-                            professional
-                            obstruction. At the same time, she will support strict ethical discipline within the Bar,
-                            with zero
-                            tolerance for touting, impersonation, or unethical solicitation that undermines collective
-                            credibility.</p>
-                        <p>Through structured engagement with courts and judicial administration, she will Advocate for
-                            respectful court
-                            processes, including improved hearing management and professional address of Advocates. By
-                            combining ethical
-                            accountability with institutional safeguards, this commitment seeks to elevate the
-                            profession’s standing and
-                            protect Advocates from arbitrary treatment.</p>
-                    </li>
-                    <li><strong>Transparent Bar Administration</strong>
-                        <p>Transparency is the foundation of trust in any institution. A Bar Council that governs
-                            Advocates must itself
-                            function in a manner that is open, accessible, and accountable.</p>
-                        <p>Adv. Geetha Raj will work to ensure that all Bar Council rules, procedures, and fee
-                            structures, including
-                            those relating to enrolment, suspension, welfare benefits, and disciplinary processes, are
-                            clearly published
-                            and easily accessible in both Kannada and English, so that Advocates can comply without
-                            intermediaries or
-                            informal channels. Plain-language guidance notes will accompany formal rules, reducing
-                            confusion and
-                            procedural dependency.</p>
-                        <p>To minimise unnecessary travel and loss of professional time, she will Advocate for
-                            district-level service
-                            camps enabling routine administrative updates, such as identity corrections, welfare
-                            nominations, and
-                            document submissions, to be completed locally. Regular and clear communication, including
-                            periodic public
-                            reporting on welfare disbursals and grievance-handling outcomes, will be encouraged to
-                            ensure institutional
-                            accountability.</p>
-                        <p>Through these measures, the Bar Council will function in plain view of its members, restoring
-                            confidence that
-                            administrative processes are fair, predictable, and genuinely service-oriented.</p>
-                    </li>
-                    <li><strong>LEGISLATIVE ADVOCACY FOR THE PROTECTION OF THE LEGAL PROFESSION : From Representation to
-                            Effective
-                            Implementation</strong>
-                        <p>For decades, Advocates have relied on fragmented safeguards under general criminal law, the
-                            Advocates Act,
-                            1961, and sporadic executive assurances. In practice, these measures have proved inadequate
-                            to address
-                            persistent challenges faced by the profession, including impersonation, violence,
-                            intimidation, professional
-                            exploitation, and the absence of structured social security.</p>
-                        <p>Adv. Geetha Raj believes that the role of the Bar Council must evolve from passive
-                            representation to active
-                            institutional engagement in statutory implementation and policy strengthening. Protection of
-                            Advocates
-                            cannot remain confined to resolutions or episodic protest; it must be secured through
-                            effective operation,
-                            monitoring, and reinforcement of legislative and statutory frameworks.</p>
-                        <p>With her background in legislative drafting, institutional litigation, and sustained
-                            engagement with public
-                            authorities, Adv. Geetha Raj will function as a policy and implementation driver, ensuring
-                            that laws
-                            intended to protect Advocates are translated into real, enforceable outcomes on the ground.
-                        </p>
 
-                        <ol type="a">
-                            <li><strong>Karnataka Prohibition of Unauthorised Practice of Law (Fake Advocates) Bill,
-                                    2025:</strong>
-                                Recognising the serious concerns relating to unauthorised legal practice and
-                                impersonation, the State
-                                has initiated legislative action through the Karnataka Prohibition of Unauthorised
-                                Practice of Law (Fake
-                                Advocates) Bill, 2025.
-                                <p>Adv. Geetha Raj’s role in relation to this legislation will be focused on
-                                    implementation,
-                                    institutional coordination, and strengthening of enforcement, without presuming or
-                                    speculating on
-                                    legislative content. In furtherance of this objective, she will:</p>
-                                <ul class='list-level-2'>
-                                    <li>work within Bar Council processes to support and operationalise the statute once
-                                        enacted,</li>
-                                    <li>coordinate with Bar Associations to identify, document, and channel instances of
-                                        unauthorised
-                                        practice through appropriate institutional mechanisms,</li>
-                                    <li>engage with the Law Department, Home Department, and enforcement authorities to
-                                        ensure
-                                        consistent and effective application of the law,</li>
-                                    <li>facilitate interaction with the High Court administration and subordinate
-                                        judiciary for
-                                        practical verification and reporting mechanisms,</li>
-                                    <li>participate in consultative processes relating to rules, guidelines, or
-                                        administrative
-                                        directions issued under the statute, and</li>
-                                    <li>Advocate for periodic review and strengthening of enforcement measures where
-                                        implementation gaps
-                                        are identified.</li>
-                                </ul>
-                                <p>Her approach will be to ensure that the legislation operates as a functional
-                                    safeguard for genuine
-                                    Advocates and litigants, rather than remaining a declaratory or symbolic provision.
-                                </p>
+                    <li><strong>COMPREHENSIVE MEDICAL INSURANCE FOR ADVOCATES AND DEPENDENTS</strong>
+                        <p>Adv. Geetha Raj will actively work toward the introduction of <strong>Bar-wide group medical
+                                insurance schemes</strong> covering advocates, their spouses, children, and dependent
+                            parents.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul class='list-level-2'>
+                            <li><strong>Negotiated group Mediclaim policies</strong> with both public and private
+                                insurance companies</li>
+                            <li><strong>Lower premiums</strong> through pooled risk</li>
+                            <li><strong>Broader coverage</strong> including hospitalization, critical illness and
+                                maternity benefits</li>
+                            <li><strong>Cashless treatment</strong> across major hospital networks</li>
+                        </ul>
+                        <p><strong>Structured Options:</strong></p>
+                        <p>Recognising the diversity within the Bar, the scheme will be structured with <strong>tiered
+                                insurance options</strong>, allowing young advocates, senior advocates, and women
+                            advocates to opt for coverage that suits their stage of life and professional capacity.</p>
+                        <p><strong>Continuity of coverage</strong> will be a core principle, ensuring that advocates are
+                            not excluded during periods of illness, maternity, or temporary suspension of practice.</p>
+                        <p><em>As a practising insurance lawyer representing life and insurance companies, Adv. Geetha
+                                Raj brings rare, hands-on expertise in structuring group insurance products, negotiating
+                                policy terms, and ensuring that claims are honoured in practice, not merely promised on
+                                paper.</em></p>
+                    </li>
+
+                    <li><strong>PENSION AND POST-PRACTICE SECURITY FOR ADVOCATES</strong>
+                        <p>The belief that an advocate can or should practice until death is neither humane nor
+                            realistic. A profession that speaks for justice must also ensure dignity and security for
+                            its own members in their later years.</p>
+                        <p>Adv. Geetha Raj will initiate structured dialogue and policy development to evolve a
+                            <strong>Pension and Retirement Security Model</strong> for advocates.
+                        </p>
+                        <p><strong>Proposed Modalities:</strong></p>
+                        <ul class='list-level-2'>
+                            <li><strong>Voluntary or semi-mandatory pension contributions</strong> routed through the
+                                Advocates' Welfare Fund during active years of practice</li>
+                            <li><strong>Opt-in pension tiers</strong> based on years of practice and contribution
+                                capacity</li>
+                            <li><strong>Special pension safeguards for women advocates</strong>, particularly those who
+                                experience career breaks due to marriage, maternity, or caregiving responsibilities</li>
+                            <li><strong>Clear exit and transition mechanisms</strong>, including voluntary surrender or
+                                dormancy of the Sanad upon retirement and eligibility-based activation of pension
+                                benefits thereafter</li>
+                        </ul>
+                        <p><em>The objective is security with dignity, not coercion.</em></p>
+                    </li>
+
+                    <li><strong>PRESSURING THE STATE FOR STATUTORY PROTECTION</strong>
+                        <p>Medical insurance and pension security for advocates cannot depend solely on goodwill or
+                            fragmented schemes; they require <strong>statutory recognition and policy backing</strong>.
+                        </p>
+                        <p>Adv. Geetha Raj commits to using the institutional strength of the Bar Council to actively
+                            engage and pressurise the State Government for:</p>
+                        <ul class='list-level-2'>
+                            <li>Statutory medical insurance support for advocates</li>
+                            <li>Government participation or subsidies in advocate pension schemes</li>
+                            <li>Formal recognition of advocates as a professional class deserving social security
+                                protection</li>
+                        </ul>
+                        <p>She will also coordinate with other State Bar Councils to build a <strong>national advocacy
+                                framework</strong> aimed at long-term legislative protection for lawyers.</p>
+                        <p><em>Advocates protect the justice system; the justice system, in turn, must protect
+                                advocates.</em></p>
+                    </li>
+
+                    <li><strong>ADVOCATE PROTECTION AND SECURITY FRAMEWORK</strong>
+                        <p>Financial security alone is insufficient if advocates remain vulnerable to physical threats
+                            and professional intimidation. Alongside health and pension security, Adv. Geetha Raj will
+                            work toward the establishment of a formal <strong>Advocate Protection Framework</strong>.
+                        </p>
+                        <p>This framework will include:</p>
+                        <ul class='list-level-2'>
+                            <li>Institutional responses to threats, harassment, and violence against advocates</li>
+                            <li>Structured coordination with police and district administrations</li>
+                            <li>Clear protocols to be triggered when advocates are targeted for their professional work
                             </li>
-                            <li><strong>Karnataka Advocates’ Protection from Violence and Social Welfare (Amendment)
-                                    Bill, 2025</strong>
-                                <p>Violence, intimidation, and threats against Advocates undermine not only individual
-                                    safety but the
-                                    independence and effectiveness of the justice delivery system itself. Legislative
-                                    attention to this
-                                    issue is reflected in the Karnataka Advocates’ Protection from Violence and Social
-                                    Welfare
-                                    (Amendment) Bill, 2025.</p>
-                                <p>Adv. Geetha Raj’s engagement with this legislation will centre on ensuring that
-                                    statutory protections
-                                    are implemented uniformly, seriously, and without dilution. In this regard, she
-                                    will:</p>
-                                <ul class='list-level-2'>
-                                    <li>work through Bar Council mechanisms to institutionalise coordination between Bar
-                                        Associations,
-                                        police authorities, and district administrations,</li>
-                                    <li>engage with enforcement agencies to promote uniform response protocols across
-                                        districts,</li>
-                                    <li>situate Advocate protection firmly within constitutional guarantees of life,
-                                        dignity, and fair
-                                        trial, reinforcing its institutional importance,</li>
-                                    <li>support integration of welfare, medical assistance, insurance, and compensation
-                                        measures with
-                                        Advocate-protection mechanisms, and</li>
-                                    <li>monitor implementation challenges and Advocate for administrative or legislative
-                                        refinements
-                                        wherever required.</li>
-                                </ul>
-                                <p>Her focus will be to ensure that statutory protection for Advocates is real,
-                                    responsive, and credible
-                                    in practice.</p>
+                            <li>Strong and consistent representation before the government and judiciary to reinforce
+                                <strong>zero tolerance</strong> for attacks on advocates
                             </li>
-                            <li><strong>CONTINUED LEGISLATIVE AND POLICY ENGAGEMENT FOR Advocates</strong>
-                                <p>Adv. Geetha Raj’s commitment to statutory reform is continuous and forward-looking,
-                                    extending beyond
-                                    specific enactments. She will work within the Bar Council framework to support,
-                                    strengthen, and
-                                    advance legislative and policy measures relating to:</p>
-                                <ul class='list-level-2'>
-                                    <li>Advocates’ Social Security and Pension Frameworks, including structured
-                                        retirement security and
-                                        safeguards for women Advocates and career interruptions.</li>
-                                    <li>Advocates’ Medical Insurance and Health-Support Frameworks, with emphasis on
-                                        group coverage,
-                                        emergency assistance, and integration with welfare structures.</li>
-                                    <li>Advocates’ Workplace Safety and Court Infrastructure Standards, including safety
-                                        norms,
-                                        essential facilities, and institutional accountability.</li>
-                                    <li>Regulation of Online Legal Services, focusing on verification, prevention of
-                                        impersonation and
-                                        unfair competition, and consumer transparency.</li>
-                                </ul>
-                                <p>Through sustained institutional engagement, Adv. Geetha Raj aims to ensure that laws
-                                    and policies
-                                    affecting Advocates are implemented effectively, monitored consistently, and
-                                    strengthened where
-                                    necessary, so that statutory protection translates into lived professional security.
-                                </p>
+                        </ul>
+                    </li>
+                    <li><strong>YOUNG ADVOCATES FIRST</strong>
+                        <p>Early-career lawyers need real skills and support, not just speeches. Geetha will launch:</p>
+                        <p><strong>Mentorship Network</strong><br>
+                            Pairing senior and junior lawyers to teach courtroom drafting, procedure, and ethics.</p>
+                        <p><strong>Practice-Support Clinics</strong><br>
+                            Regular sessions covering:</p>
+                        <ul class='list-level-2'>
+                            <li>Family court strategy</li>
+                            <li>Civil trial techniques (from pleadings to evidence and argument)</li>
+                            <li>Tribunal practice</li>
+                            <li>Handling insurance/consumer claims</li>
+                        </ul>
+                        <p><strong>Career Stability Toolkit</strong><br>
+                            Training on chamber management, ethical client intake, fee-setting, and reputation-building.
+                        </p>
+                        <p><em>By investing in the first five years of an advocate's career, this commitment pays
+                                dividends in competence and confidence for the entire Bar.</em></p>
+                    </li>
+
+                    <li><strong>WOMEN'S SAFETY, RESPECT & LEADERSHIP</strong>
+                        <p>Geetha will foster a court environment where women lawyers feel safe and empowered:</p>
+                        <ul class='list-level-2'>
+                            <li><strong>Zero tolerance</strong> for any harassment or intimidation in court or Bar
+                                premises</li>
+                            <li><strong>Rapid-response support cell</strong> to guide and assist any woman facing crisis
                             </li>
-                        </ol>
-                        <p><em>“The true test of legislation is not its passage, but its performance. My commitment is
-                                to ensure that
-                                laws meant to protect Advocates actually work, on the ground, in courts, and in daily
-                                professional
-                                life.”</em> - Adv. Geetha Raj</p>
+                            <li><strong>Peer-support circles</strong> for professional solidarity</li>
+                            <li><strong>At least 30% of committee and ADR-panel seats reserved for women</strong>,
+                                creating a leadership pipeline</li>
+                            <li><strong>Training and mentorship</strong> to help women compete for the toughest cases
+                                (criminal, constitutional, commercial)</li>
+                        </ul>
+                        <p><em>A recent SCBA survey found 57.8% of women lawyers report unequal leadership opportunities
+                                and many still face bias or disrespect in court. This commitment means safer courts and
+                                equal voice for women, backed by concrete support structures.</em></p>
+                    </li>
+                    <li><strong>MEDIATION & ADR FOR FASTER JUSTICE</strong>
+                        <p>As a trained mediator, Geetha knows that amicable settlements can cut case backlogs and
+                            preserve dignity.</p>
+                        <p><strong>Mediation-Readiness for Lawyers:</strong></p>
+                        <ul class='list-level-2'>
+                            <li>Training on negotiation tactics</li>
+                            <li>Settlement drafting</li>
+                            <li>Recognizing viable cases</li>
+                        </ul>
+                        <p><strong>Special Programs:</strong> Focus on family disputes (custody, maintenance, property)
+                            to reach enforceable agreements and avoid repeat litigation.</p>
+                        <p><strong>Strengthening Court-Annexed Mediation:</strong></p>
+                        <ul class='list-level-2'>
+                            <li>Improving coordination and scheduling</li>
+                            <li>Educating litigants about mediation options</li>
+                        </ul>
+                        <p><em>This aligns with the new Mediation Act (2023) which mandates pre-litigation mediation and
+                                fast-track settlements. By embracing ADR, her Bar Council aims to reduce our 4.5
+                                crore-case backlog and deliver speedy justice without sacrificing advocacy.</em></p>
+                    </li>
+                    <li><strong>PRO BONO WITH PURPOSE</strong>
+                        <p>Building on her own long-term pro bono work, Geetha will scale a structured legal-aid system:
+                        </p>
+                        <ul class='list-level-2'>
+                            <li><strong>Centralized pro bono roster</strong> coordinated with Bar Associations and NGOs
+                                to match deserving clients to willing advocates</li>
+                            <li><strong>Legal-literacy camps</strong> on key issues (domestic violence, senior rights,
+                                insurance claims, maintenance, etc.)</li>
+                            <li><strong>"One-Day Justice Camps"</strong> in collaboration with local Bars for
+                                on-the-spot screening, advice, and documentation help</li>
+                        </ul>
+                        <p><em>Recent data show legal-aid beneficiaries now outnumber the total of the previous 30
+                                years. These measures ensure that "justice reaches the last person" as promised.</em>
+                        </p>
+                    </li>
+
+                    <li><strong>PROFESSIONAL DIGNITY</strong>
+                        <p>Every lawyer deserves respect. Geetha will:</p>
+                        <ul class='list-level-2'>
+                            <li>Develop an <strong>Advocates' Dignity Charter</strong> with clear guidelines and
+                                remedies for any humiliation or unfair treatment</li>
+                            <li>Enforce <strong>strict ethical standards</strong> within the Bar: zero tolerance for
+                                touting, impersonation or unethical solicitation</li>
+                            <li>Work with courts to ensure <strong>respectful court processes</strong> (better
+                                time-management, proper forms of address)</li>
+                        </ul>
+                        <p><em>By combining firm standards with internal awareness programs, she will elevate the
+                                profession's esteem and protect advocates from arbitrary treatment.</em></p>
+                    </li>
+                    <li><strong>TRANSPARENT BAR ADMINISTRATION</strong>
+                        <p>Transparency builds trust. Geetha will:</p>
+                        <ul class='list-level-2'>
+                            <li><strong>Publish all rules and fees</strong> (membership, suspension, benefits) in
+                                Kannada and English</li>
+                            <li>Provide <strong>simplified guidance notes</strong> explaining rules plainly</li>
+                            <li>Extend the <strong>"doorstep" model of service</strong> beyond Mysuru through
+                                district-level camps</li>
+                            <li>Issue <strong>quarterly reports</strong> on welfare-fund disbursals and
+                                grievance-handling statistics</li>
+                        </ul>
+                        <p><em>These steps ensure the Bar Council works in plain view, restoring faith that "the system
+                                is working for us."</em></p>
+                    </li>
+                    <li><strong>LEGISLATIVE ADVOCACY FOR PROTECTION OF THE LEGAL PROFESSION</strong>
+                        <p><strong>A. Karnataka Prohibition of Unauthorised Practice of Law (Fake Advocates) Bill,
+                                2025</strong></p>
+                        <p>The growing menace of fake advocates poses a direct threat to the integrity of the justice
+                            delivery system, the livelihood of genuine advocates, and the confidence of litigants.</p>
+                        <p><strong>Adv. Geetha Raj will:</strong></p>
+                        <ul class='list-level-2'>
+                            <li>Actively pursue the enactment and enforcement of this comprehensive Bill</li>
+                            <li>Place the Bill formally before the Karnataka State Bar Council</li>
+                            <li>Secure institutional endorsement and recommendation to the State Government</li>
+                            <li>Engage directly with the Law Department and Home Department</li>
+                            <li>Compile data from Bar Associations and courts regarding impersonation cases</li>
+                            <li>Work with the High Court administration to prepare for implementation through:
+                                <ul>
+                                    <li>Advocate verification mechanisms</li>
+                                    <li>QR-code based identity checks</li>
+                                    <li>Mandatory reporting protocols</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><em>This law protects genuine advocates rather than regulating them, ensuring both
+                                legislative acceptance and smooth enforcement.</em></p>
+
+                        <p><strong>B. Karnataka Advocates' Protection from Violence and Social Welfare (Amendment) Bill,
+                                2025</strong></p>
+                        <p>Incidents of violence, intimidation, and threats against advocates have become a serious and
+                            recurring concern across the State.</p>
+                        <p><strong>Adv. Geetha Raj will:</strong></p>
+                        <ul class='list-level-2'>
+                            <li>Work relentlessly for the enactment of this Bill providing statutory protection to
+                                advocates</li>
+                            <li>Frame advocate protection as a matter of constitutional importance</li>
+                            <li>Push for structured coordination between Bar Associations, police, and district
+                                administrations</li>
+                            <li>Ensure mandatory protocols recognising attacks on advocates as offences affecting the
+                                justice system</li>
+                            <li>Integrate advocate protection with welfare measures (medical assistance, insurance,
+                                compensation)</li>
+                            <li>Create inter-State momentum for uniform advocate-protection legislation</li>
+                        </ul>
+                        <p><em>A legal profession that functions under fear cannot discharge its constitutional role
+                                with courage and integrity.</em></p>
                     </li>
                 </ol>
 
                 <hr class='manifesto-divider'>
 
-                <h2 class='manifesto-heading'>IMPLEMENTATION FRAMEWORK</h2>
-                <h3 class='manifesto-subtitle'>From Commitments to Irreversible Institutional Reform</h3>
+                <h2 class='manifesto-heading'>IMPLEMENTATION PLAN</h2>
+                <h3 class='manifesto-subheading'>Purpose of the First 90 Days</h3>
+                <p>The first ninety days will focus on <strong>institutional foundations, formal resolutions, and
+                        irreversible processes</strong> that enable sustained reform. The objective is not symbolic
+                    announcements, but the creation of systems that cannot be reversed or ignored.</p>
 
-                <h4 class='manifesto-subheading'>Purpose and Governing Philosophy</h4>
-                <p>This implementation framework is designed to convert professional commitments into institutional
-                    outcomes that cannot
-                    be diluted, delayed, or reversed. The emphasis is not on announcements or short-term optics, but on
-                    embedding
-                    reforms into Bar Council processes, resolutions, and inter-institutional engagements so that
-                    momentum continues
-                    irrespective of personalities.</p>
-                <p>Adv. Geetha Raj’s approach is grounded in institutional sequencing: first securing authority, then
-                    locking in
-                    process, and finally activating execution through formal mechanisms of the Bar Council, the
-                    judiciary, and the
-                    State.</p>
-
-                <h4 class='manifesto-subheading'>I. Institutionalisation of Advocate Welfare Systems</h4>
+                <h4 class='manifesto-subheading'>1. ADVOCATE WELFARE SYSTEMS: IMMEDIATE INSTITUTIONALISATION</h4>
+                <p><strong>Within the first 90 days:</strong></p>
                 <ul class='list-level-1'>
-                    <li>The first pillar of implementation is the transformation of welfare from an ad-hoc benefit
-                        mechanism into a
-                        predictable, rule-governed institutional system.</li>
-                    <li>Advocate welfare access mechanisms will be formally institutionalised through Bar Council
-                        processes, including:
-                        <ul class='list-level-2'>
-                            <li>establishment of welfare-access facilitation structures at Bar Association levels,</li>
-                            <li>formal adoption of a standardised welfare claim pathway clearly delineating stages of
-                                submission,
-                                scrutiny, approval, and disbursal,</li>
-                            <li>incorporation of defined accountability and escalation mechanisms to address delays.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Special emphasis will be placed on welfare benefits to Advocates and their families, with a
-                        dedicated focus on
-                        families of deceased Advocates, ensuring priority handling, sensitive engagement, and continuity
-                        of support.
-                    </li>
-                    <li>Through these measures, welfare will cease to be discretionary or intermediary-driven and will
-                        operate as a
-                        rights-based, systematised function of the Bar Council.</li>
+                    <li>Welfare helpdesks will be formally established at Bar Associations</li>
+                    <li>A published and standardised <strong>claim-processing pathway</strong> will be placed before the
+                        Bar Council</li>
+                    <li>Clear stages from submission to disbursal with timelines and escalation mechanisms</li>
                 </ul>
+                <p><em>These steps will ensure predictability, reduce discretionary delays, and restore confidence that
+                        welfare benefits are accessible without intermediaries.</em></p>
 
-                <h4 class='manifesto-subheading'>II. Structured Capacity-Building for Young Advocates</h4>
+                <h4 class='manifesto-subheading'>2. YOUNG ADVOCATE CAPACITY-BUILDING & MENTORSHIP</h4>
+                <p><strong>Launch of:</strong></p>
                 <ul class='list-level-1'>
-                    <li>Adv. Geetha Raj’s implementation strategy recognises that professional sustainability begins
-                        with early
-                        institutional support, not informal patronage.</li>
-                    <li>A formally structured mentorship and capacity-building framework will be embedded within Bar
-                        Council
-                        functioning, ensuring:
+                    <li>Structured <strong>Young Advocate Mentorship Calendar</strong></li>
+                    <li>Monthly training modules covering:
                         <ul class='list-level-2'>
-                            <li>predictable and periodic skill-development modules,</li>
-                            <li>direct engagement of experienced practitioners across practice areas,</li>
-                            <li>continuity in training standards rather than sporadic sessions.</li>
-                        </ul>
-                    </li>
-                    <li>This framework will be designed to function independently of individual access or chance,
-                        ensuring that young
-                        Advocates across districts know where, when, and how professional skills can be acquired.</li>
-                    <li>The objective is not episodic training, but the creation of a professional pipeline that
-                        strengthens the Bar
-                        across generations.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>III. Women Advocates’ Safety, Support & Leadership Integration</h4>
-                <ul class='list-level-1'>
-                    <li>Implementation in this domain will move beyond reactive support and symbolic representation.
-                    </li>
-                    <li>A formal Women Advocates’ Support and Response Framework will be embedded institutionally,
-                        providing:
-                        <ul class='list-level-2'>
-                            <li>defined reporting and support pathways,</li>
-                            <li>structured coordination with Bar Associations and relevant authorities,</li>
-                            <li>internal mechanisms to address harassment, intimidation, or professional exclusion.</li>
-                        </ul>
-                    </li>
-                    <li>Simultaneously, representation of women Advocates within committees, ADR panels, and
-                        institutional roles will be
-                        systematically integrated, ensuring leadership participation is structural rather than
-                        discretionary.</li>
-                    <li>This approach ensures that women Advocates are protected, supported, and positioned as
-                        decision-makers within
-                        the profession, not merely beneficiaries of welfare.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>IV. Health, Insurance & Pension Security-Policy-to-Framework Transition
-                </h4>
-                <ul class='list-level-1'>
-                    <li>Rather than announcing schemes prematurely, Adv. Geetha Raj’s implementation model focuses on
-                        framework-building
-                        before rollout.</li>
-                    <li>Structured policy consultations will be institutionalised with:
-                        <ul class='list-level-2'>
-                            <li>insurance providers,</li>
-                            <li>actuarial experts,</li>
-                            <li>senior members of the Bar,</li>
-                            <li>Bar Associations across districts.</li>
-                        </ul>
-                    </li>
-                    <li>These consultations will culminate in drafted, consultative frameworks for:
-                        <ul class='list-level-2'>
-                            <li>group medical insurance for Advocates and their families,</li>
-                            <li>pension and post-practice security models with safeguards for women Advocates and career
-                                interruptions.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>By anchoring these initiatives in formal policy models and Bar Council deliberation, health and
-                        retirement
-                        security will progress as sustainable institutional reforms, not fragmented or goodwill-based
-                        schemes.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>V. Legislative Advocacy as an Institutional Function</h4>
-                <ul class='list-level-1'>
-                    <li>A defining feature of this implementation plan is the conversion of legislative advocacy into a
-                        formal Bar
-                        Council function, not an external campaign.</li>
-                    <li>Through formal resolutions and documented institutional positions, the Bar Council will:
-                        <ul class='list-level-2'>
-                            <li>endorse and own key legislative proposals, including laws addressing fake Advocates,
-                                Advocate protection
-                                from violence, and professional social security,</li>
-                            <li>initiate structured engagement with State departments through official channels,</li>
-                            <li>place the Bar Council on record as a policy stakeholder, not merely a pressure group.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>This approach ensures that legislative reform begins as a Bar Council mandate, making
-                        disengagement or delay by
-                        the State institutionally and politically costly.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>VI. Mediation & ADR Capacity Integration</h4>
-                <ul class='list-level-1'>
-                    <li>Implementation in mediation and ADR will focus on professional readiness, not dilution of
-                        advocacy.</li>
-                    <li>Adv. Geetha Raj will ensure that mediation-readiness becomes part of professional
-                        capacity-building, equipping
-                        Advocates with:
-                        <ul class='list-level-2'>
-                            <li>negotiation competence,</li>
-                            <li>settlement drafting skills,</li>
-                            <li>informed case selection for consensual resolution.</li>
-                        </ul>
-                    </li>
-                    <li>This integration aligns with evolving statutory frameworks while protecting the Advocate’s
-                        central role in
-                        dispute resolution. Mediation is positioned not as an alternative to advocacy, but as an
-                        extension of
-                        professional skill and client service.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>VII. Transparent and Accountable Bar Administration</h4>
-                <ul class='list-level-1'>
-                    <li>Transparency reforms will be embedded through:
-                        <ul class='list-level-2'>
-                            <li>formal publication of rules, procedures, and fee structures in accessible formats and
-                                languages,</li>
-                            <li>decentralisation of routine administrative services through structured district-level
-                                engagement,</li>
-                            <li>institutional reporting practices that allow members to assess performance without
-                                informal channels.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>The objective is to make Bar Council administration predictable, visible, and service-oriented,
-                        reducing
-                        dependency, discretion, and opacity.</li>
-                </ul>
-
-                <h4 class='manifesto-subheading'>Outcome of the Implementation Framework</h4>
-                <ul class='list-level-1'>
-                    <li>Through this phased, institutional approach:
-                        <ul class='list-level-2'>
-                            <li>welfare access becomes reliable and family-inclusive,</li>
-                            <li>professional training becomes structured and continuous,</li>
-                            <li>women Advocates gain safety and leadership integration,</li>
-                            <li>insurance and pension security move from aspiration to policy frameworks,</li>
-                            <li>legislative reform becomes an institutional inevitability,</li>
-                            <li>mediation and ADR strengthen, rather than weaken, advocacy,</li>
-                            <li>and Bar Council administration functions in plain view of its members.</li>
+                            <li>Court craft</li>
+                            <li>Drafting standards</li>
+                            <li>Evidence handling</li>
+                            <li>Tribunal practice</li>
+                            <li>Professional ethics</li>
                         </ul>
                     </li>
                 </ul>
+                <p>Senior advocates and subject-matter practitioners will be formally invited to participate, ensuring
+                    continuity and credibility.</p>
 
-                <h4 class='manifesto-subheading'>Why This Framework Cannot Be Replicated Casually</h4>
+                <h4 class='manifesto-subheading'>3. WOMEN ADVOCATES' SAFETY & SUPPORT PROTOCOL</h4>
+                <p><strong>Formal rollout of:</strong></p>
                 <ul class='list-level-1'>
-                    <li>This implementation model:
-                        <ul class='list-level-2'>
-                            <li>requires legislative drafting literacy,</li>
-                            <li>demands institutional negotiation experience,</li>
-                            <li>relies on cross-domain expertise (insurance, public law, mediation), and operates
-                                through
-                                process-locking rather than promises.</li>
-                        </ul>
-                    </li>
-                    <li>It is not a manifesto designed for applause. It is a governing architecture designed for
-                        delivery.</li>
+                    <li><strong>Women Advocates' Support and Rapid-Response Protocol</strong></li>
+                    <li>Defined reporting channels</li>
+                    <li>Coordination mechanisms with Bar Associations</li>
+                    <li>Internal mechanisms to address harassment, intimidation, or professional exclusion</li>
                 </ul>
-                <p style="margin-top:20px; font-style: italic;">“My commitment is not to complete terms, but to complete
-                    reforms, by
-                    embedding them into institutions so deeply that they outlast individuals.” - Adv. Geetha Raj</p>
+                <p><strong>Simultaneously:</strong></p>
+                <ul class='list-level-1'>
+                    <li>Steps to ensure meaningful representation of women advocates in committees and ADR panels</li>
+                    <li>Moving beyond symbolic inclusion toward leadership participation</li>
+                </ul>
+
+                <h4 class='manifesto-subheading'>4. INSURANCE & PENSION SECURITY: FRAMEWORK INITIATION</h4>
+                <p><strong>Within the first 90 days:</strong></p>
+                <p>Structured consultations with Insurance providers, Senior advocates, Actuarial experts, and Bar
+                    Associations.</p>
+                <p><strong>Focus on:</strong></p>
+                <ul class='list-level-1'>
+                    <li>Preparing draft policy models</li>
+                    <li>Contribution mechanisms</li>
+                    <li>Eligibility structures for wider consultation and phased implementation</li>
+                </ul>
+                <p><em>Ensuring that health and retirement security are addressed with seriousness and sustainability
+                        rather than ad-hoc promises.</em></p>
+
+                <h4 class='manifesto-subheading'>5. LEGISLATIVE ADVOCACY: FORMAL STATE ENGAGEMENT</h4>
+                <p><strong>Formal resolutions will be moved before the Karnataka State Bar Council endorsing:</strong>
+                </p>
+                <ol>
+                    <li>Karnataka Prohibition of Unauthorised Practice of Law (Fake Advocates) Bill, 2025</li>
+                    <li>Karnataka Advocates' Protection from Violence and Social Welfare (Amendment) Bill, 2025</li>
+                </ol>
+                <p><strong>Pursuant to these resolutions:</strong></p>
+                <ul class='list-level-1'>
+                    <li>Official representations submitted to the State Government</li>
+                    <li>Seeking initiation of the legislative process</li>
+                    <li>Structured engagement with the Law and Home Departments</li>
+                </ul>
+                <p><em>This will mark the institutional commencement of statutory reform, supported by Bar Council
+                        authority.</em></p>
+
+                <h4 class='manifesto-subheading'>6. MEDIATION & ADR READINESS</h4>
+                <p><strong>Initiation of:</strong></p>
+                <ul class='list-level-1'>
+                    <li>Mediation-readiness programs for advocates</li>
+                    <li>Focus on Negotiation skills, Settlement drafting, and Effective use of court-annexed mediation
+                        mechanisms</li>
+                </ul>
+                <p><em>This will prepare advocates to work within evolving ADR frameworks while safeguarding client
+                        interests and professional dignity.</em></p>
+
+                <h2 class='manifesto-heading'>OUTCOME OF THE FIRST 90 DAYS</h2>
+                <p>By the end of ninety days, the Bar Council will have:</p>
+                <ul class='list-level-1'>
+                    <li>✅ <strong>Functioning welfare access systems</strong></li>
+                    <li>✅ <strong>Structured training pipelines</strong></li>
+                    <li>✅ <strong>Safety protocols for women advocates</strong></li>
+                    <li>✅ <strong>Formal insurance and pension frameworks under development</strong></li>
+                    <li>✅ <strong>Active legislative engagement for profession-wide protection</strong></li>
+                </ul>
+
+                <h2 class='manifesto-heading'>CONCLUSION</h2>
+                <p>This manifesto represents not promises, but a <strong>roadmap for institutional reform</strong>.
+                    Every commitment is grounded in practical experience, professional expertise, and a deep
+                    understanding of the challenges faced by advocates across Karnataka.</p>
+                <p>Adv. Geetha Raj's vision is simple: <strong>A Bar Council that protects, empowers, and serves its
+                        members with dignity, transparency, and accountability.</strong></p>
+                <h3 class='manifesto-subtitle'>“Welfare with Dignity • Justice with Speed • Practice with Protection”
+                </h3>
+
+                <hr class='manifesto-divider'>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <h2 class='manifesto-heading'>Vote for Adv. Geetha Raj</h2>
+                    <h3 class='manifesto-subtitle'>Karnataka State Bar Council Elections 2026</h3>
+                    <p>
+                        📞 +91 80624 33857<br>
+                        ✉️ advgeetharaj@example.com
+                    </p>
+                    <p style="font-size: 0.9em; margin-top: 20px; font-style: italic; opacity: 0.8;">
+                        *This manifesto is published for informational and campaign purposes only, in accordance with
+                        Bar Council of India norms.*
+                    </p>
+                </div>
             </div>
 
             <!-- Controls sticky at bottom of modal content area -->
@@ -2244,43 +2003,45 @@
                 });
 
                 // Stop scroll on interaction
-                textContainer.addEventListener('wheel', function () { if (isScrolling) stopScroll(); });
-                textContainer.addEventListener('touchmove', function () { if (isScrolling) stopScroll(); });
+                textContainer.addEventListener('wheel', function () { if (isScrolling) stopScroll(); }, { passive: true });
+                textContainer.addEventListener('touchmove', function () { if (isScrolling) stopScroll(); }, { passive: true });
             }
 
         })();
     </script>
 
-    <!-- Disclaimer Banner Script -->
-    <script>
-        (function () {
-            const disclaimerBanner = document.getElementById('disclaimerModal');
-            const acceptBtn = document.getElementById('acceptDisclaimer');
-            const declineBtn = document.getElementById('declineDisclaimer');
+    <!-- DISCLAIMER MODAL (New) -->
+    <div id="disclaimerModal" class="disclaimer-overlay">
+        <div class="disclaimer-box">
+            <h2 class="disclaimer-title">Disclaimer</h2>
+            <div class="disclaimer-content">
+                <p>The Bar Council of India prohibits advertisement or solicitation by advocates in any form or manner.
+                    By accessing this website, <a href="https://www.geetharajforksbc.com"
+                        style="color:#0672a6; text-decoration:none; font-weight:bold;">www.geetharajforksbc.com</a>, you
+                    acknowledge and confirm that you are seeking information about <strong>Advocate Geetha Raj</strong>
+                    voluntarily and of your own accord. There has been no solicitation, advertisement, or inducement by
+                    Advocate Geetha Raj or her associates.</p>
 
-            // Show banner on page load
-            window.addEventListener('load', function () {
-                disclaimerBanner.classList.add('show');
-            });
+                <p>The content of this website is intended solely for informational and campaign purposes in connection
+                    with Advocate Geetha Raj’s candidature for the Karnataka State Bar Council elections. It does not
+                    constitute legal advice, professional engagement, or an invitation to act upon any legal matter.</p>
 
-            // Accept button - hide banner
-            if (acceptBtn) {
-                acceptBtn.addEventListener('click', function () {
-                    disclaimerBanner.classList.remove('show');
-                    setTimeout(() => {
-                        disclaimerBanner.style.display = 'none';
-                    }, 500);
-                });
-            }
+                <p>All references to professional experience, qualifications, and institutional roles are factual and
+                    provided strictly for transparency and democratic participation. No material on this website should
+                    be construed as a guarantee of results, assurance of benefits, or endorsement by any authority.</p>
 
-            // Decline button - redirect or show message
-            if (declineBtn) {
-                declineBtn.addEventListener('click', function () {
-                    alert('You must accept the terms to continue using this website.');
-                });
-            }
-        })();
-    </script>
+                <p>By proceeding, you agree that the content is made available in compliance with applicable Bar Council
+                    regulations and solely to facilitate informed choice within the legal profession.</p>
+            </div>
+            <div class="disclaimer-action">
+                <label class="disclaimer-check-label">
+                    <input type="checkbox" id="disclaimerCheck" class="disclaimer-checkbox">
+                    I accept the above.
+                </label>
+                <button id="disclaimerBtn" class="disclaimer-btn" disabled>PROCEED TO WEBSITE</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll Reveal Animation Script -->
     <script>
@@ -2321,7 +2082,7 @@
         (function () {
             const typewriterEl = document.getElementById('typewriterText');
             const decipherEl = document.getElementById('decipherText');
-            const typewriterText = "“Your vote strengthens representation with responsibility.”";
+            const typewriterText = "“Your vote strengthens the voice of Advocates”";
             const decipherTarget = "Cast Your 1st Preferential Vote";
 
             let hasAnimated = false;
@@ -2392,100 +2153,78 @@
         })();
     </script>
 
-    <!-- Gallery Carousel Script -->
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const totalSlides = slides.length;
-        const track = document.querySelector('.carousel-track');
-        const dotsContainer = document.getElementById('carouselDots');
 
-        // Create pagination dots
-        function createDots() {
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('button');
-                dot.classList.add('carousel-dot');
-                if (i === 0) dot.classList.add('active');
-                dot.onclick = () => goToSlide(i);
-                dotsContainer.appendChild(dot);
-            }
-        }
-
-        // Move carousel
-        function moveCarousel(direction) {
-            currentSlide += direction;
-
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-
-            updateCarousel();
-        }
-
-        // Go to specific slide
-        function goToSlide(index) {
-            currentSlide = index;
-            updateCarousel();
-        }
-
-        // Update carousel position and dots
-        function updateCarousel() {
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-            // Update dots
-            const dots = document.querySelectorAll('.carousel-dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
-        }
-
-        // Auto-play (optional)
-        function startAutoPlay() {
-            setInterval(() => {
-                moveCarousel(1);
-            }, 5000); // Change slide every 5 seconds
-        }
-
-        // Initialize
-        if (slides.length > 0) {
-            createDots();
-            // Uncomment to enable auto-play
-            // startAutoPlay();
-        }
-    </script>
     <!-- Swiper & Fancybox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-    <!-- Swiper Init -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
-                effect: 'coverflow',
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 0,
-                    depth: 200,
-                    modifier: 1,
-                    slideShadows: true,
+        // PATCH: Force passive event listeners for jQuery 
+        // to resolve [Violation] warnings in Chrome
+        (function ($) {
+            if (!$) return;
+            var oldOn = $.fn.on;
+            $.fn.on = function (types, selector, data, fn) {
+                if (typeof types === 'string' &&
+                    (types.indexOf('wheel') !== -1 ||
+                        types.indexOf('mousewheel') !== -1 ||
+                        types.indexOf('touchstart') !== -1 ||
+                        types.indexOf('touchmove') !== -1)) {
+                    this.each(function () {
+                        this.addEventListener(types, fn, { passive: true });
+                    });
+                    return this;
+                }
+                return oldOn.apply(this, arguments);
+            };
+        })(window.jQuery);
+    </script>
+
+    <script>
+        /* CONSOLIDATED SWIPER INIT */
+        $(function () {
+            // Gallery Swiper
+            new Swiper('.gallery-swiper-container', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false
                 },
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true
                 },
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                breakpoints: {
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                }
+            });
+
+            // Fancybox v5 Initialization
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                Hash: false,
+                Thumbs: {
+                    autoStart: false,
+                },
+                Images: {
+                    Panzoom: {
+                        maxScale: 2,
+                    },
                 },
             });
         });
     </script>
+
+
 
     <!-- Lenis Smooth Scroll -->
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
@@ -2542,6 +2281,94 @@
             if (el) {
                 observer.observe(el);
             }
+        })();
+    </script>
+    <!-- DISCLAIMER MODAL (New) -->
+    <div id="disclaimerModal" class="disclaimer-overlay">
+        <div class="disclaimer-box">
+            <h2 class="disclaimer-title">Disclaimer</h2>
+            <div class="disclaimer-content" data-lenis-prevent>
+                <p>The Bar Council of India prohibits advertisement or solicitation by advocates in any form or manner.
+                    By accessing this website, <a href="https://www.geetharajforksbc.com"
+                        style="color:#0672a6; text-decoration:none; font-weight:bold;">www.geetharajforksbc.com</a>, you
+                    acknowledge and confirm that you are seeking information about <strong>Advocate Geetha Raj</strong>
+                    voluntarily and of your own accord. There has been no solicitation, advertisement, or inducement by
+                    Advocate Geetha Raj or her associates.</p>
+
+                <p>The content of this website is intended solely for informational and campaign purposes in connection
+                    with Advocate Geetha Raj’s candidature for the Karnataka State Bar Council elections. It does not
+                    constitute legal advice, professional engagement, or an invitation to act upon any legal matter.</p>
+
+                <p>All references to professional experience, qualifications, and institutional roles are factual and
+                    provided strictly for transparency and democratic participation. No material on this website should
+                    be construed as a guarantee of results, assurance of benefits, or endorsement by any authority.</p>
+
+                <p>By proceeding, you agree that the content is made available in compliance with applicable Bar Council
+                    regulations and solely to facilitate informed choice within the legal profession.</p>
+            </div>
+            <div class="disclaimer-action">
+                <label class="disclaimer-check-label">
+                    <input type="checkbox" id="disclaimerCheck" class="disclaimer-checkbox">
+                    I accept the above.
+                </label>
+                <button id="disclaimerBtn" class="disclaimer-btn" disabled>PROCEED TO WEBSITE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Script -->
+    <script>
+        (function () {
+            const modal = document.getElementById('disclaimerModal');
+            const check = document.getElementById('disclaimerCheck');
+            const btn = document.getElementById('disclaimerBtn');
+
+            // Show on load
+            window.addEventListener('load', () => {
+                // Small delay to ensure smooth entry
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 100);
+            });
+
+            // Checkbox interaction
+            if (check && btn) {
+                check.addEventListener('change', () => {
+                    if (check.checked) {
+                        btn.removeAttribute('disabled');
+                        btn.classList.add('enabled');
+                    } else {
+                        btn.setAttribute('disabled', 'true');
+                        btn.classList.remove('enabled');
+                    }
+                });
+            }
+
+            // Button interaction
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                    // Completely hide after transition
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 500);
+                });
+            }
+        })();
+    </script>
+    <!-- Manifesto Flex Interaction Script -->
+    <script>
+        (function () {
+            const options = document.querySelectorAll('.manifesto-option');
+
+            options.forEach(option => {
+                option.addEventListener('click', function () {
+                    // Remove active class from all other options
+                    options.forEach(opt => opt.classList.remove('active'));
+                    // Add active class to clicked option
+                    this.classList.add('active');
+                });
+            });
         })();
     </script>
 </body>

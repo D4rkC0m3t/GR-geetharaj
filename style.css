@@ -857,188 +857,154 @@ nav a:hover::after {
 
 
 
-/* DISCLAIMER BANNER (Bottom) */
-.disclaimer-banner {
+/* DISCLAIMER MODAL (Centered Clean Design) */
+.disclaimer-overlay {
   display: none;
+  /* Hidden by default */
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
   z-index: 10000;
-  background: white;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-  animation: slideUpBanner 0.5s ease-out;
-}
-
-.disclaimer-banner.show {
-  display: block;
-}
-
-@keyframes slideUpBanner {
-  from {
-    transform: translateY(100%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-.disclaimer-banner-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 40px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  backdrop-filter: blur(4px);
 }
 
-.disclaimer-banner-text {
-  flex: 1;
+.disclaimer-overlay.show {
+  display: flex;
+}
+
+.disclaimer-box {
+  background: #ffffff;
+  width: 90%;
   max-width: 700px;
+  padding: 40px;
+  border-radius: 4px;
+  /* Crisp numbering/ref style */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: left;
+  border-top: 5px solid #0672a6;
+  /* Ref blue or brand color? Using Blue for "legal/clean" look or Brand Green */
+  /* Let's stick to a professional legal blue or the brand Text Dark */
+  border-top: 5px solid var(--primary-color);
 }
 
-.disclaimer-scroll-area {
-  max-height: 120px;
+.disclaimer-title {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  /* Light/Clean */
+  color: #0672a6;
+  /* Specific blue from commonly used disclaimers or ref */
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.disclaimer-content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-height: 50vh;
   overflow-y: auto;
-  padding-right: 15px;
-  /* Space for scrollbar */
-  border: 1px solid #eee;
-  padding: 10px;
-  border-radius: 8px;
-  background: #f9f9f9;
+  padding-right: 10px;
 }
 
-/* Custom Scrollbar for disclaimer */
-.disclaimer-scroll-area::-webkit-scrollbar {
+.disclaimer-content p {
+  margin-bottom: 15px;
+}
+
+.disclaimer-content strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Custom Scrollbar */
+.disclaimer-content::-webkit-scrollbar {
   width: 6px;
 }
 
-.disclaimer-scroll-area::-webkit-scrollbar-track {
+.disclaimer-content::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border-radius: 3px;
 }
 
-.disclaimer-scroll-area::-webkit-scrollbar-thumb {
+.disclaimer-content::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 3px;
 }
 
-.disclaimer-banner-text h3 {
-  font-size: 11px;
-  font-weight: 600;
-  color: #888;
-  letter-spacing: 1px;
-  margin: 0 0 8px 0;
-  text-transform: uppercase;
+.disclaimer-action {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
 }
 
-.disclaimer-banner-text h2 {
-  font-size: 24px;
-  /* Slightly reduced for better fit */
-  font-weight: 700;
-  color: #1a1a2e;
-  margin: 0 0 10px 0;
-}
-
-.disclaimer-banner-text p {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #555;
-  margin: 0 0 10px 0;
-}
-
-.disclaimer-banner-text ul {
-  margin: 0 0 10px 15px;
-  padding-left: 15px;
-  font-size: 12px;
-  color: #555;
-}
-
-.disclaimer-banner-text li {
-  margin-bottom: 5px;
-}
-
-.disclaimer-banner-buttons {
+.disclaimer-check-label {
   display: flex;
-  gap: 15px;
-  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 20px;
+  user-select: none;
 }
 
-.disclaimer-btn-decline,
-.disclaimer-btn-accept {
-  padding: 12px 30px;
+.disclaimer-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+
+.disclaimer-btn {
+  background: transparent;
+  color: #999;
+  border: 1px solid #ccc;
+  padding: 12px 25px;
   font-size: 13px;
   font-weight: 700;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.disclaimer-btn-decline {
-  background: transparent;
-  color: #555;
-  border: 2px solid #ddd;
+.disclaimer-btn.enabled {
+  background: #ffffff;
+  color: #0672a6;
+  /* Match title */
+  border-color: #0672a6;
+  cursor: pointer;
 }
 
-.disclaimer-btn-decline:hover {
-  background: #f5f5f5;
-  border-color: #bbb;
-}
-
-.disclaimer-btn-accept {
-  background: #2563eb;
-  color: white;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
-
-.disclaimer-btn-accept:hover {
-  background: #1d4ed8;
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
-  transform: translateY(-2px);
+.disclaimer-btn.enabled:hover {
+  background: #0672a6;
+  color: #ffffff;
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
-  .disclaimer-banner-content {
-    flex-direction: column;
-    padding: 25px 20px;
-    gap: 20px;
-  }
-
-  .disclaimer-banner-text h2 {
-    font-size: 22px;
-  }
-
-  .disclaimer-banner-buttons {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .disclaimer-btn-decline,
-  .disclaimer-btn-accept {
-    width: 100%;
-  }
-}
-
 @media (max-width: 600px) {
-  .disclaimer-modal-content {
+  .disclaimer-box {
     padding: 25px;
-    max-height: 90vh;
+    width: 95%;
   }
 
-  .disclaimer-modal-content h2 {
+  .disclaimer-title {
     font-size: 22px;
   }
 
-  .disclaimer-text {
-    font-size: 14px;
+  .disclaimer-content {
+    font-size: 13px;
   }
 }
+
 
 /* ============================================
    INTERACTIVE FLEX CARDS MANIFESTO
@@ -1425,121 +1391,91 @@ nav a:hover::after {
   margin-bottom: 10px;
 }
 
-/* Carousel Gallery */
-.carousel-container {
+/* Carousel Gallery Swiper */
+.gallery-swiper-container {
   position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 50px auto;
-  padding: 0 60px;
-}
-
-.carousel-wrapper {
+  padding-bottom: 50px;
+  /* Space for pagination */
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  background: #fff;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-  min-width: 100%;
+.gallery-swiper-container .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8f8f8;
+  background: #222;
+  /* Dark background for 'contained' images */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  /* Consistent height */
 }
 
-.carousel-slide img {
+.gallery-swiper-container .swiper-slide a {
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.gallery-swiper-container .swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  max-height: 600px;
   object-fit: contain;
   display: block;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Navigation Buttons */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  width: 50px;
-  height: 50px;
+.gallery-swiper-container .swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons Customization */
+.gallery-swiper-container .swiper-button-next,
+.gallery-swiper-container .swiper-button-prev {
+  color: #b9c406;
+  background: rgba(255, 255, 255, 0.8);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-btn:hover {
-  background: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-50%) scale(1.1);
+.gallery-swiper-container .swiper-button-next::after,
+.gallery-swiper-container .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.carousel-btn-prev {
-  left: 10px;
-}
-
-.carousel-btn-next {
-  right: 10px;
-}
-
-.carousel-btn svg {
-  color: #333;
-}
-
-/* Pagination Dots */
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 25px;
-}
-
-.carousel-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-  padding: 0;
-}
-
-.carousel-dot.active {
+.gallery-swiper-container .swiper-pagination-bullet-active {
   background: #b9c406;
-  transform: scale(1.2);
 }
 
-.carousel-dot:hover {
-  background: #999;
-}
+
 
 @media (max-width: 768px) {
-  .carousel-container {
-    padding: 0 50px;
+  .gallery-swiper-container {
+    padding: 0 10px 40px;
   }
 
-  .carousel-btn {
-    width: 40px;
-    height: 40px;
+  .gallery-swiper-container .swiper-slide {
+    height: 300px;
   }
+}
 
-  .carousel-slide img {
-    max-height: 400px;
-  }
+/* targeted reset for fancybox images to prevent global style interference */
+.fancybox-image {
+  border-radius: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
 }
 
 .plugins {
@@ -1875,19 +1811,7 @@ html.lenis body {
   pointer-events: none;
 }
 
-/* FANCYBOX FIXES */
-.fancybox-container {
-  z-index: 99999 !important;
-}
 
-.fancybox-slide {
-  padding: 10px !important;
-}
-
-.fancybox-content {
-  width: 100% !important;
-  height: auto !important;
-}
 
 /* --- ANIMATION STABILIZATION --- */
 .decipher-wrapper {
@@ -1930,4 +1854,33 @@ html.lenis body {
   white-space: normal;
   word-wrap: break-word;
   line-height: 1.5;
+}
+
+/* MANIFESTO TRIGGER BUTTON */
+.btn-manifesto-trigger {
+  display: inline-block;
+  background: var(--primary-color, #b9c406);
+  color: #fff;
+  padding: 15px 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(185, 196, 6, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-manifesto-trigger:hover {
+  background: #a2ac05;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(185, 196, 6, 0.4);
+  color: #fff;
+}
+
+.btn-manifesto-trigger:active {
+  transform: translateY(-1px);
 }
