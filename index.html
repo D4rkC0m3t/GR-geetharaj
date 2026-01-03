@@ -451,7 +451,7 @@
             </div>
 
             <div class="about-footer">
-                <a href="#" id="viewManifestoBtn" class="btn-manifesto-trigger">VIEW FULL MANIFESTO</a>
+                <a href="#" id="viewManifestoBtnAbout" class="btn-manifesto-trigger">VIEW FULL MANIFESTO</a>
             </div>
         </div>
     </section>
@@ -868,7 +868,8 @@
             </div>
 
             <div style="text-align: center; margin-top: 40px;">
-                <button id="viewManifestoBtn" class="btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">View
+                <button id="viewManifestoBtnSection" class="btn-primary btn-manifesto-trigger"
+                    style="padding: 15px 30px; font-size: 1.1rem;">View
                     Full Manifesto</button>
             </div>
 
@@ -1945,7 +1946,7 @@
         // Manifesto Modal System
         (function () {
             var modal = document.getElementById("manifestoModal");
-            var openBtn = document.getElementById("viewManifestoBtn");
+            var openBtns = document.querySelectorAll(".btn-manifesto-trigger");
             var closeBtn = document.querySelector(".close-manifesto");
             var scrollBtn = document.getElementById("autoScrollBtn");
             var textContainer = document.querySelector(".manifesto-text-container");
@@ -1958,14 +1959,16 @@
             });
 
             // Open
-            if (openBtn) {
-                openBtn.onclick = function (e) {
-                    e.preventDefault();
-                    modal.style.display = "flex"; // Changed to flex for centering
-                    document.body.style.overflow = "hidden";
-                }
+            if (openBtns.length > 0) {
+                openBtns.forEach(function (btn) {
+                    btn.onclick = function (e) {
+                        e.preventDefault();
+                        modal.style.display = "flex"; // Changed to flex for centering
+                        document.body.style.overflow = "hidden";
+                    }
+                });
             } else {
-                console.error("Manifesto Button not found!");
+                console.error("Manifesto Buttons not found!");
             }
 
             // Close
